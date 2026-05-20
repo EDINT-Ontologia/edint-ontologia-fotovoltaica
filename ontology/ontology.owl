@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro"
-     xml:base="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro"
+<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#"
+     xml:base="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:gsp="http://www.opengis.net/ont/geosparql#"
      xmlns:mod="https://w3id.org/mod#"

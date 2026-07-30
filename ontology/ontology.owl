@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#"
      xml:base="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:gsp="http://www.opengis.net/ont/geosparql#"
      xmlns:mod="https://w3id.org/mod#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -30,6 +29,7 @@
         <dcterms:description xml:lang="es">La ontología de instalaciones fotovoltaicas describe todos los conceptos relacionados con las instalaciones de este tipo que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red.</dcterms:description>
         <dcterms:description xml:lang="en">The ontology of photovoltaic systems describes all the concepts related to installations of this type that are found in the elements of the infrastructure of a municipality and the measurement of the generation, consumption, accumulation and exported electricity into the grid.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-26</dcterms:issued>
         <dcterms:title xml:lang="es">Ontología de Instalación Fotovoltaica</dcterms:title>
         <dcterms:title xml:lang="en">The Photovoltaic System Ontology</dcterms:title>
         <vann:preferredNamespacePrefix>edintfotov</vann:preferredNamespacePrefix>
@@ -730,7 +730,7 @@ These concepts are defined in a taxonomy (SKOS concept scheme).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="https://datos.ign.es/def/geo_core#xETRS89">
         <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
+        <dcterms:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dcterms:source>
         <rdfs:comment xml:lang="es">Coordenada X en metros (ETRS89)</rdfs:comment>
         <rdfs:comment xml:lang="en">X-Coordinate in meters (ETRS89)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://datos.ign.es/def/geo_core#"/>
@@ -744,7 +744,7 @@ These concepts are defined in a taxonomy (SKOS concept scheme).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="https://datos.ign.es/def/geo_core#yETRS89">
         <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
+        <dcterms:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dcterms:source>
         <rdfs:comment xml:lang="es">Coordenada Y en metros (ETRS89)</rdfs:comment>
         <rdfs:comment xml:lang="en">Y-Coordinate in meters (ETRS89)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://datos.ign.es/def/geo_core#"/>

@@ -2,17 +2,17 @@
 <span class="markdown">En la Figura 1 se muestra el modelo conceptual de la ontología con sus clases y relaciones (propiedades de objeto).</p>
 <p><center><img src="images/diagrama-conceptual.png"/><figcaption>
 Figura 1. Modelo conceptual de la ontología</figcaption></center></p>
-<p>La ontología reutiliza conceptos relacionados a sensores de la (<a href="https://w3c.github.io/sdw-sosa-ssn/ssn/">Semantic Sensor Network Ontology</a>) para representar la generación de electricidad de una instalación fotovoltaica. Un <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement">elemento de la infraestructura</a> es cualquier equipamiento o elemento urbano que puede tener una  <a href="#PhotovoltaicSystem">instalación fotovoltaica</a>.  Estas instalaciones  son <a href="#http://www.w3.org/ns/sosa/FeatureOfInterest">características de interés</a> de las mediciones de generación de electricidad
+<p>La ontología reutiliza conceptos relacionados a sensores de la (<a href="https://w3c.github.io/sdw-sosa-ssn/ssn/">Semantic Sensor Network Ontology</a>) para representar la generación de electricidad de una instalación fotovoltaica. Un <a href="#https://edint.es/def/infraestructura#InfrastructureElement">elemento de la infraestructura</a> es cualquier equipamiento o elemento urbano que puede tener una  <a href="#PhotovoltaicSystem">instalación fotovoltaica</a>.  Estas instalaciones  son <a href="#http://www.w3.org/ns/sosa/FeatureOfInterest">características de interés</a> de las mediciones de generación de electricidad
  <a href="#http://www.w3.org/ns/sosa/madeBySensor">hechas con sensores</a>, que a su vez <a href="#http://www.w3.org/ns/sosa/observes">observan</a> una <a href="#http://www.w3.org/ns/sosa/ObservableProperty">propiedad observable</a> tal como la electricidad generada, consumida, acumulada y vertida en la red.</p>
 
-<p>Un <a href="#PhotovoltaicMeter">medidor fotovoltaico</a> es un sensor que mide las variables relacionadas con la electricidad que es generada por la instalación. Estas <a href="#PhotovoltaicGeneration">mediciones de la generación</a> reflejan la cantidad de electricidad generada, consumida, acumulada o vertida en cierto período de tiempo. Para representar estas mediciones se reutiliza la ontología de cantidades, unidades, dimensiones y tipos, <a href="https://www.qudt.org/">Quantities, Units, Dimensions and DataTypes Ontology</a>. El valor de la medición se representa mediante la clase  <a href="#http://qudt.org/schema/qudt/QuantityValue">QuantityValue</a> que expresa la magnitud y el tipo de una cantidad y se obtiene multiplicando un <a href="#http://qudt.org/schema/qudt/value">valor numérico n</a> por una unidad de medida que se obtiene a través de la propiedad <a href="#http://qudt.org/schema/qudt/hasUnit">hasUnit</a> que se relaciona con la clase <a href="#http://qudt.org/schema/qudt/Unit">Unit</a> que contiene un catálogo de unidades de medida, por ejempo kilovatio-hora (unit:KiloW-HR) utilizado para medir la generación de electricidad.  El período medido se representa mediante la clase  <a href="#http://www.w3.org/2006/time#Interval">Interval</a> en donde su hora de inicio y hora de fin se relacionan con un instante de tiempo (<a href="#http://www.w3.org/2006/time#Instant">Instant</a>). El <a href="#http://vocab.linkeddata.es/datosabiertos/kos/edint/PhotovoltaicSystemStatus">estado de la instalación fotovoltaica</a> es una taxonomía en donde se tienen conceptos como "Operativo", "Parcial" o  "Fuera de servicio".  La instalación tiene un <a href="#http://vocab.linkeddata.es/datosabiertos/kos/edint/PhotovoltaicSystemUsageType">tipo de uso</a> que puede ser por ejemplo  "Conectado (On-grid)", "Autónomo (Off-grid)" o "Híbrido". 
+<p>Un <a href="#PhotovoltaicMeter">medidor fotovoltaico</a> es un sensor que mide las variables relacionadas con la electricidad que es generada por la instalación. Estas <a href="#PhotovoltaicGeneration">mediciones de la generación</a> reflejan la cantidad de electricidad generada, consumida, acumulada o vertida en cierto período de tiempo. Para representar estas mediciones se reutiliza la ontología de cantidades, unidades, dimensiones y tipos, <a href="https://www.qudt.org/">Quantities, Units, Dimensions and DataTypes Ontology</a>. El valor de la medición se representa mediante la clase  <a href="#http://qudt.org/schema/qudt/QuantityValue">QuantityValue</a> que expresa la magnitud y el tipo de una cantidad y se obtiene multiplicando un <a href="#http://qudt.org/schema/qudt/value">valor numérico n</a> por una unidad de medida que se obtiene a través de la propiedad <a href="#http://qudt.org/schema/qudt/hasUnit">hasUnit</a> que se relaciona con la clase <a href="#http://qudt.org/schema/qudt/Unit">Unit</a> que contiene un catálogo de unidades de medida, por ejempo kilovatio-hora (unit:KiloW-HR) utilizado para medir la generación de electricidad.  El período medido se representa mediante la clase  <a href="#http://www.w3.org/2006/time#Interval">Interval</a> en donde su hora de inicio y hora de fin se relacionan con un instante de tiempo (<a href="#http://www.w3.org/2006/time#Instant">Instant</a>). El <a href="#https://edint.es/kos/PhotovoltaicSystemStatus">estado de la instalación fotovoltaica</a> es una taxonomía en donde se tienen conceptos como "Operativo", "Parcial" o  "Fuera de servicio".  La instalación tiene un <a href="#https://edint.es/kos/PhotovoltaicSystemUsageType">tipo de uso</a> que puede ser por ejemplo  "Conectado (On-grid)", "Autónomo (Off-grid)" o "Híbrido". 
 El <a href="#PhotovoltaicSystemContract">contrato</a> tiene un <a href="#contractHolder">titular</a> y se <a href="#appliesTo">aplica</a> una determianda instalación fotovoltaica. El contrato también se asocia con una <a href="#PhotovoltaicRate">tarifa</a>.</p>
 <pre><textarea style="resize:none" readonly id="code2" name="code" rows="25" cols="100">
 @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
-@prefix edintinf: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#&gt; .
-@prefix edintphotovstatus: &lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/PhotovoltaicSystemStatus/&gt; .
-@prefix edintphotovusage: &lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/PhotovoltaicSystemUsageType/&gt; .
-@prefix edintfotov: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#&gt; .
+@prefix edintinf: &lt;https://edint.es/def/infraestructura#&gt; .
+@prefix edintphotovstatus: &lt;https://edint.es/kos/PhotovoltaicSystemStatus/&gt; .
+@prefix edintphotovusage: &lt;https://edint.es/kos/PhotovoltaicSystemUsageType/&gt; .
+@prefix edintfotov: &lt;https://edint.es/def/fotovoltaica#&gt; .
 @prefix esdir: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#&gt; .
 @prefix esadm: &lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#&gt; .
 @prefix geosparql: &lt;http://www.opengis.net/ont/geosparql#&gt; .
@@ -25,118 +25,118 @@ El <a href="#PhotovoltaicSystemContract">contrato</a> tiene un <a href="#contrac
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # Generación de electricidad a través de la instalación fotovoltaica
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/generacionFotovoltaica/853_2026_03_GLORIAFUERTES&gt;
+&lt;https://example.org/recurso/generacionFotovoltaica/853_2026_03_GLORIAFUERTES&gt;
   a edintfotov:PhotovoltaicGeneration;
   dct:identifier "853_2026_03_GLORIAFUERTES";
   rdfs:label "Generación de 300 KwH en 3/2026", "Lectura del sensor GLORIAFUERTES correspondiente a 3/2026";
-  sosa:hasFeatureOfInterest &lt;http://vocab.linkeddata.es/datosabiertos/recurso/instalacionFotovoltaica/ES2026111222XX&gt;;
-  sosa:hasResult &lt;http://vocab.linkeddata.es/datosabiertos/recurso/valorGenerado/853_2026_03_GLORIAFUERTES&gt;;
-  sosa:madeBySensor &lt;http://vocab.linkeddata.es/datosabiertos/recurso/medidorInstalacionFotovoltaica/GLORIAFUERTES_General&gt;;
-  sosa:phenomenonTime &lt;http://vocab.linkeddata.es/datosabiertos/recurso/intervaloMedicion/853_2026_03_GLORIAFUERTES&gt; .
+  sosa:hasFeatureOfInterest &lt;https://example.org/recurso/instalacionFotovoltaica/ES2026111222XX&gt;;
+  sosa:hasResult &lt;https://example.org/recurso/valorGenerado/853_2026_03_GLORIAFUERTES&gt;;
+  sosa:madeBySensor &lt;https://example.org/recurso/medidorInstalacionFotovoltaica/GLORIAFUERTES_General&gt;;
+  sosa:phenomenonTime &lt;https://example.org/recurso/intervaloMedicion/853_2026_03_GLORIAFUERTES&gt; .
 
 # Contrato de la instalación fotovoltaica
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/contratoFotovoltaico/853&gt; a edintfotov:PhotovoltaicSystemContract;
+&lt;https://example.org/recurso/contratoFotovoltaico/853&gt; a edintfotov:PhotovoltaicSystemContract;
   dct:identifier "Contrato-ES2002783120652701XX";
-  edintfotov:appliesTo &lt;http://vocab.linkeddata.es/datosabiertos/recurso/instalacionFotovoltaica/ES2026111222XX&gt;;
-  edintfotov:contractHolder &lt;http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/JMDBarajas&gt;;
-  edintfotov:hasRate &lt;http://vocab.linkeddata.es/datosabiertos/recurso/tarifaInstalacionFotovoltaica/tarifa_fotov_general&gt;;
+  edintfotov:appliesTo &lt;https://example.org/recurso/instalacionFotovoltaica/ES2026111222XX&gt;;
+  edintfotov:contractHolder &lt;https://example.org/recurso/organizacion/JMDBarajas&gt;;
+  edintfotov:hasRate &lt;https://example.org/recurso/tarifaInstalacionFotovoltaica/tarifa_fotov_general&gt;;
   rdfs:label "Contrato de instalación fotovoltaica en CALLE LOGROÑO, 181, 28042 MADRID",
     "Contrato de instalación fotovoltaicaq para: CC Y BIBLIOTECA GLORIA FUERTES" .
 
 # Dirección postal 
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/28042&gt; a esdir:DireccionPostal;
+&lt;https://example.org/recurso/direccion-postal/28042&gt; a esdir:DireccionPostal;
   rdfs:label "AV/ LOGROÑO 181, 28042 MADRID" .
 
 # Definición de la Geometría
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/404606.22-3593687.76&gt;
+&lt;https://example.org/recurso/equipamiento-municipal/locations/404606.22-3593687.76&gt;
   a geosparql:Geometry;
   geosparql:asWKT "POINT (-3.5936877657335900 40.460622835379600)"^^geosparql:wktLiteral .
 
 # Elemento de la infraestructura municipal: CC Y BIBLIOTECA GLORIA FUERTES 
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/equipamientoMunicipal/853&gt; a
+&lt;https://example.org/recurso/equipamientoMunicipal/853&gt; a
     edintinf:InfrastructureElement;
   dct:identifier "853";
-  edintinf:belongsTo &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/barrio/127&gt;;
-  edintfotov:hasPhotovoltaicSystem &lt;http://vocab.linkeddata.es/datosabiertos/recurso/instalacionFotovoltaica/ES2026111222XX&gt;;
-  geosparql:hasGeometry &lt;http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/404606.22-3593687.76&gt;;
+  edintinf:belongsTo &lt;https://example.org/recurso/sector-publico/territorio/barrio/127&gt;;
+  edintfotov:hasPhotovoltaicSystem &lt;https://example.org/recurso/instalacionFotovoltaica/ES2026111222XX&gt;;
+  geosparql:hasGeometry &lt;https://example.org/recurso/equipamiento-municipal/locations/404606.22-3593687.76&gt;;
   rdfs:label "CC Y BIBLIOTECA GLORIA FUERTES";
-  schema:address &lt;http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/28042&gt; .
+  schema:address &lt;https://example.org/recurso/direccion-postal/28042&gt; .
 
 # Instante de tiempo de comienzo del intervalo
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/instante/853_2026_03_GLORIAFUERTES/2026-03-01T00%3A00%3A00Z&gt;
+&lt;https://example.org/recurso/instante/853_2026_03_GLORIAFUERTES/2026-03-01T00%3A00%3A00Z&gt;
   a time:Instant;
   rdfs:label "Instante de tiempo: 2026-03-01T00:00:00Z";
   time:inXSDDateTimeStamp "2026-03-01T00:00:00Z"^^xsd:dateTimeStamp .
 
 # Instante de tiempo de final del intervalo
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/instante/853_2026_03_GLORIAFUERTES/2026-03-31T23%3A59%3A59Z&gt;
+&lt;https://example.org/recurso/instante/853_2026_03_GLORIAFUERTES/2026-03-31T23%3A59%3A59Z&gt;
   a time:Instant;
   rdfs:label "Instante de tiempo: 2026-03-31T23:59:59Z";
   time:inXSDDateTimeStamp "2026-03-31T23:59:59Z"^^xsd:dateTimeStamp .
 
 # Intervalo de tiempo
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/intervaloMedicion/853_2026_03_GLORIAFUERTES&gt;
+&lt;https://example.org/recurso/intervaloMedicion/853_2026_03_GLORIAFUERTES&gt;
   a time:Interval;
   rdfs:label "Período de medición correspondiente a 3/2026";
-  time:hasBeginning &lt;http://vocab.linkeddata.es/datosabiertos/recurso/instante/853_2026_03_GLORIAFUERTES/2026-03-01T00%3A00%3A00Z&gt;;
-  time:hasEnd &lt;http://vocab.linkeddata.es/datosabiertos/recurso/instante/853_2026_03_GLORIAFUERTES/2026-03-31T23%3A59%3A59Z&gt; .
+  time:hasBeginning &lt;https://example.org/recurso/instante/853_2026_03_GLORIAFUERTES/2026-03-01T00%3A00%3A00Z&gt;;
+  time:hasEnd &lt;https://example.org/recurso/instante/853_2026_03_GLORIAFUERTES/2026-03-31T23%3A59%3A59Z&gt; .
 
 # Medidor de la generación de electricidad de la instalación fotovoltaica
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/medidorInstalacionFotovoltaica/GLORIAFUERTES_General&gt;
+&lt;https://example.org/recurso/medidorInstalacionFotovoltaica/GLORIAFUERTES_General&gt;
   a edintfotov:PhotovoltaicMeter;
   dct:identifier "GLORIAFUERTES_General";
   rdfs:label "Medidor fotovoltaico: GLORIAFUERTES_General, Sensor/Medidor de tipo: external";
-  schema:manufacturer &lt;http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/Siemens&gt; .
+  schema:manufacturer &lt;https://example.org/recurso/organizacion/Siemens&gt; .
 
 # Organización que gestiona el elemento de la infraesturctura
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/JMDBarajas&gt;
+&lt;https://example.org/recurso/organizacion/JMDBarajas&gt;
   a schema:Organization;
   dct:identifier "JMDBarajas";
   rdf:label "Junta Municipal del Distrito de Barajas";
   schema:legalName "Junta Municipal del Distrito de Barajas" .
 
 # Organización que realizó la instalación fotovoltaica
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/dragados&gt; a schema:Organization;
+&lt;https://example.org/recurso/organizacion/dragados&gt; a schema:Organization;
   dct:identifier "DRAGADOS";
   rdfs:label "Dragados Offshore" .
 
 # Organización fabricante del medidor
-  &lt;http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/Siemens&gt; a schema:Organization;
+  &lt;https://example.org/recurso/organizacion/Siemens&gt; a schema:Organization;
   dct:identifier "Siemens";
   rdfs:label "Siemens" .
 
 # Instalación fotovoltaica
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/instalacionFotovoltaica/ES2026111222XX&gt;
+&lt;https://example.org/recurso/instalacionFotovoltaica/ES2026111222XX&gt;
   a edintfotov:PhotovoltaicSystem;
   dct:identifier "ES2026111222XX";
   edintfotov:hasStatus edintphotovstatus:operative;
   edintfotov:hasUsageType edintphotovusage:grid;
-  edintfotov:installationOrganization &lt;http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/dragados&gt; ;
+  edintfotov:installationOrganization &lt;https://example.org/recurso/organizacion/dragados&gt; ;
   edintfotov:inServiceDate "2025-02-01"^^xsd:date;
   edintfotov:installedPhotovoltaicPower "8,2"^^xsd:float;
   rdfs:label "Instalación fotovoltaica ES2026111222XX, on-grid, conectada a la red" .
 
 # Barrio en donde se encuentra el elemento de la infraestructura
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/barrio/120&gt;
+&lt;https://example.org/recurso/sector-publico/territorio/barrio/120&gt;
   a esadm:Barrio;
   dct:identifier "120";
   rdfs:label "ALAMEDA DE OSUNA" .
 
 # Tarifa de generación de electricidad para el contrato
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/tarifaInstalacionFotovoltaica/tarifa_fotov_general&gt;
+&lt;https://example.org/recurso/tarifaInstalacionFotovoltaica/tarifa_fotov_general&gt;
   a edintfotov:PhtovoltaicSystemRate;
   dct:identifier "tarifa_fotov_general";
   rdfs:label "Tarifa aplicada para la generación de electricidad",
     "Tarifa de tipo: tarifa_fotov_general" .
 
 # Unidad de medida
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/unidad/kWh&gt; a qudt:Unit;
+&lt;https://example.org/recurso/unidad/kWh&gt; a qudt:Unit;
   rdfs:label "kWh" .
 
 # Resultado de la medición de generación de electricidad durante un mes
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/valorGenerado/853_2026_03_GLORIAFUERTES&gt;
+&lt;https://example.org/recurso/valorGenerado/853_2026_03_GLORIAFUERTES&gt;
   a qudt:QuantityValue;
-  qudt:hasUnit &lt;http://vocab.linkeddata.es/datosabiertos/recurso/unidad/kWh&gt;;
+  qudt:hasUnit &lt;https://example.org/recurso/unidad/kWh&gt;;
   qudt:value "300"^^xsd:float;
   rdfs:label "Cantidad generada: 300 kWh" .
 </textarea></pre>

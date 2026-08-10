@@ -1,0 +1,892 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix edintinf: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix saref: <https://saref.etsi.org/core/> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://astrea.linkeddata.es/shapes#01c4ae2a568c4225e48b740397251010> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#0321f3e4d834f37721b15dc752034abf> a sh:NodeShape ;
+    rdfs:label "Photovoltaic system rate"@en,
+        "The photovoltaic system tariff is a policy mechanism that pays solar system owners for the surplus electricity they generate and feed back into the national grid."@en,
+        "La tarifa para instalaciones fotovoltaicas es un mecanismo que remunera a los propietarios de sistemas solares por el excedente de electricidad que generan y que vierten a la red eléctrica."@es,
+        "Tarifa instalación fotovoltaica"@es ;
+    sh:name "Photovoltaic system rate"@en,
+        "The photovoltaic system tariff is a policy mechanism that pays solar system owners for the surplus electricity they generate and feed back into the national grid."@en,
+        "La tarifa para instalaciones fotovoltaicas es un mecanismo que remunera a los propietarios de sistemas solares por el excedente de electricidad que generan y que vierten a la red eléctrica."@es,
+        "Tarifa instalación fotovoltaica"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystemRate> .
+
+<https://astrea.linkeddata.es/shapes#0919e2248a4fbed2f30f1284cb8ad85c> a sh:NodeShape ;
+    rdfs:label "Photovoltaic meter"@en,
+        "Medidor fotovoltaico"@es ;
+    sh:description "Device that measures and records the total electricity produced by a solar panel system. It tracks electricity output in real-time and cumulatively (kilowatt-hours), helping to evaluate system performance, maximize efficiency, verify electricity savings, and manage grid interaction."@en,
+        "Dispositivo que mide y registra la electricidad total producida por un sistema de paneles solares. Realiza un seguimiento de la producción de energía en tiempo real y de forma acumulativa (kilovatios-hora), lo que ayuda a evaluar el rendimiento del sistema, maximizar la eficiencia, verificar el ahorro energético y gestionar la interacción con la red eléctrica."@es ;
+    sh:name "Photovoltaic meter"@en,
+        "Medidor fotovoltaico"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicMeter> .
+
+<https://astrea.linkeddata.es/shapes#09e38f45c7086ab062de6d37e0b27ebb> a sh:PropertyShape ;
+    rdfs:label "applicable unit" ;
+    rdfs:isDefinedBy <http://qudt.org/3.1.11/schema/shacl/qudt>,
+        <http://qudt.org/schema/qudt> ;
+    sh:name "applicable unit" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path qudt:applicableUnit .
+
+<https://astrea.linkeddata.es/shapes#0bbb954271d2bc3423ac28283326cda9> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#0c9810d08d82d4c9b778f5be381b06de> a sh:NodeShape ;
+    rdfs:label "Utility meter"@en,
+        "Medidor suministro"@es ;
+    sh:description "Device that measures the consumption of a utility, for example electricity, gas, water, or heating."@en,
+        "Dispositivo que mide el consumo de un suministro, por ejemplo, electricidad, gas, agua o calefacción."@es ;
+    sh:name "Utility meter"@en,
+        "Medidor suministro"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityMeter> .
+
+<https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171d6155a1b> a sh:NodeShape ;
+    rdfs:label "Time instant"@en,
+        "entidad temporal"@es,
+        "instante de tiempo."@es ;
+    sh:description "A temporal entity with zero extent or duration"@en,
+        "Un intervalo temporal o un instante."@es,
+        "Una entidad temporal con una extensión o duración cero."@es ;
+    sh:name "Time instant"@en,
+        "entidad temporal"@es,
+        "instante de tiempo."@es ;
+    sh:nodeKind sh:IRI ;
+    sh:not <https://astrea.linkeddata.es/shapes#b4f8e474ed84dd3b9666897649fb98e5> ;
+    sh:property <https://astrea.linkeddata.es/shapes#2532894d090d3f1667f7f7b6da65df98>,
+        <https://astrea.linkeddata.es/shapes#6fdcb6fa74959cc52414f19ced544249>,
+        <https://astrea.linkeddata.es/shapes#75b684fc1c2b1d96cee32ddf1e4e2934>,
+        <https://astrea.linkeddata.es/shapes#8d26f56ec9e75266434f08dc7f5c2047> ;
+    sh:targetClass time:Instant .
+
+<https://astrea.linkeddata.es/shapes#163744438032c52e32bf3c7c8bb195e8> a sh:NodeShape ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/sf#> ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#2c05aff6cdb8e4832c0587b142f0256d>,
+        <https://astrea.linkeddata.es/shapes#fea379c748c9dad4793c340bbcb92040> ;
+    sh:targetClass <http://www.opengis.net/ont/sf#Point> .
+
+<https://astrea.linkeddata.es/shapes#1b22f04071e0e864530add38191940a6> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass qudt:Quantifiable .
+
+<https://astrea.linkeddata.es/shapes#1bc257992e4584fa4ec247decbd920d5> a sh:NodeShape ;
+    rdfs:label "Unit"@en ;
+    rdfs:isDefinedBy <http://qudt.org/schema/qudt> ;
+    sh:description """A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities of the same kind (more generally of equivalent dimension). 
+  For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). 
+  Any measurement of the length can be expressed as a number multiplied by the unit meter. 
+  More formally, the value of a physical quantity Q with respect to a unit (U) is expressed as the scalar multiple of a real number (n) and U, as  Q = nU."""@en ;
+    sh:name "Unit"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass qudt:Unit .
+
+<https://astrea.linkeddata.es/shapes#1edec7068d03129d92604b36356d00db> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#2847d406ce56298538fe899b1bbe0ed1> a sh:NodeShape ;
+    rdfs:label "Urban element"@en,
+        "Elemento urbano"@es ;
+    sh:description "It includes the inventory of urban elements such as road signs, traffic lights, bollards, etc."@en,
+        "Comprende el inventario de elementos urbanos tales como señales viales, semáforos, pilonas, etc."@es ;
+    sh:name "Urban element"@en,
+        "Elemento urbano"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edintinf:UrbanElement .
+
+<https://astrea.linkeddata.es/shapes#2a5638bb60ea2b6cc9dad6b050cc0c9e> a sh:NodeShape ;
+    rdfs:label "Provincia" ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description """Entidad local con personalidad jurídica propia, determinada por la agrupación de Municipios y división territorial para el cumplimiento de las actividades del Estado. La delimitación territorial de Provincia está recogida en el Registro Central de Cartografía del IGN [fuente: Modelo de Direcciones de la Administración General del Estado v.2]
+Su identificador, que se especifica con la propiedad dct:identifier, es el proporcionado por el INE en http://www.ine.es/daco/daco42/codmun/codmun09/09codmun.xls
+Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do"""@es ;
+    sh:name "Provincia" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> .
+
+<https://astrea.linkeddata.es/shapes#2b0b3671d0180b7f8c732ad509f26f80> a sh:PropertyShape ;
+    rdfs:isDefinedBy sosa: ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:wasObservedBy .
+
+<https://astrea.linkeddata.es/shapes#2e9b54f9ea252c6f0ef4a90faed34b85> a sh:NodeShape ;
+    rdfs:label "Ciudad" ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description "Una ciudad es un área urbana en la que predominan fundamentalmente la industria y los servicios [fuente: Wikipedia]"@es ;
+    sh:name "Ciudad" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Ciudad> .
+
+<https://astrea.linkeddata.es/shapes#3d4b97a42a1a83571e6160e2a33f4bb1> rdfs:label "Type of utility associated to a utility supply point. It can be for example eectricity, water, gas, etc."@en,
+        "has utility type"@en,
+        "Tipo de suministro asociado a un punto de suministro de un servicio. Puede ser por ejemplo electricidad, aua, gas. Los tipos de suministro son conceptos definidos en una taxonomía (esquema de conceptos SKOS)."@es,
+        "tiene tipo  suministro"@es ;
+    sh:description "Type of utility associated to a utility supply point. It can be for example eectricity, water, gas, etc."@en,
+        "Tipo de suministro asociado a un punto de suministro de un servicio. Puede ser por ejemplo electricidad, aua, gas. Los tipos de suministro son conceptos definidos en una taxonomía (esquema de conceptos SKOS)."@es ;
+    sh:name "has utility type"@en,
+        "tiene tipo  suministro"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#3e18b0f9fac2d3bdcd51a2fdadcbda53> a sh:NodeShape ;
+    rdfs:label "Temporal entity"@en,
+        "entidad temporal"@es,
+        "instante de tiempo."@es,
+        "intervalo de tiempo"@es ;
+    sh:description "A temporal interval or instant."@en,
+        "Un intervalo temporal o un instante."@es,
+        "Una entidad temporal con una extensión o duración cero."@es,
+        "Una entidad temporal con una extensión o duración."@es ;
+    sh:name "Temporal entity"@en,
+        "entidad temporal"@es,
+        "instante de tiempo."@es,
+        "intervalo de tiempo"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:not <https://astrea.linkeddata.es/shapes#b4f8e474ed84dd3b9666897649fb98e5> ;
+    sh:property <https://astrea.linkeddata.es/shapes#2532894d090d3f1667f7f7b6da65df98>,
+        <https://astrea.linkeddata.es/shapes#6fdcb6fa74959cc52414f19ced544249>,
+        <https://astrea.linkeddata.es/shapes#75b684fc1c2b1d96cee32ddf1e4e2934>,
+        <https://astrea.linkeddata.es/shapes#8d26f56ec9e75266434f08dc7f5c2047> ;
+    sh:targetClass time:Instant,
+        time:Interval,
+        time:TemporalEntity .
+
+<https://astrea.linkeddata.es/shapes#4012686c84815fd55c7e1c4bc133b40d> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass time:ProperInterval .
+
+<https://astrea.linkeddata.es/shapes#468764bdf230b449a74ffdf9fd48fcb7> a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:isResultOf .
+
+<https://astrea.linkeddata.es/shapes#48ea695aa98408a6ade8ae77c99c7bb4> a sh:PropertyShape ;
+    rdfs:label "Relation linking an Observation or Actuation or act of Sampling and a Result or Sample."@en,
+        "has result"@en ;
+    rdfs:isDefinedBy sosa:,
+        <http://www.w3.org/ns/sosa/common/> ;
+    sh:description "Relation linking an Observation or Actuation or act of Sampling and a Result or Sample."@en ;
+    sh:name "has result"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:hasResult .
+
+<https://astrea.linkeddata.es/shapes#51b86047117a7d01ccfcd1e59a4447da> rdfs:label "Relationship between the meter and a taxonomy of meter types. For example, \"external\", \"processed\", \"telemetry\"."@en,
+        "has meter type"@en,
+        "Relación entre el Medidor y una taxonomía de tipos de medidores. Por ejemplo,  \"externo\", \"procesado\", \"telemedida\"."@es,
+        "tiene tipo medidor"@es ;
+    sh:description "Relationship between the meter and a taxonomy of meter types. For example, \"external\", \"processed\", \"telemetry\"."@en,
+        "Relación entre el Medidor y una taxonomía de tipos de medidores. Por ejemplo,  \"externo\", \"procesado\", \"telemedida\"."@es ;
+    sh:name "has meter type"@en,
+        "tiene tipo medidor"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#570e251d885fe83c81ffb787ce4307aa> a sh:PropertyShape ;
+    rdfs:label "The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity."@en,
+        "phenomenon time"@en,
+        "El momento en que el resultado de una observación, actuación o muestreo se aplica a la entidad de interés. No necesariamente coincide con el momento del resultado. Puede ser un intervalo, un instante o alguna otra entidad temporal compuesta."@es,
+        "momento del fenómeno"@es ;
+    rdfs:isDefinedBy sosa:,
+        <http://www.w3.org/ns/sosa/common/> ;
+    sh:description "The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity."@en,
+        "El momento en que el resultado de una observación, actuación o muestreo se aplica a la entidad de interés. No necesariamente coincide con el momento del resultado. Puede ser un intervalo, un instante o alguna otra entidad temporal compuesta."@es ;
+    sh:name "phenomenon time"@en,
+        "momento del fenómeno"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:phenomenonTime .
+
+<https://astrea.linkeddata.es/shapes#5f4045e77929663a03e1192facf1905b> a sh:PropertyShape ;
+    rdfs:label "value" ;
+    rdfs:isDefinedBy <http://qudt.org/schema/qudt> ;
+    sh:name "value" ;
+    sh:nodeKind sh:Literal ;
+    sh:path qudt:value .
+
+<https://astrea.linkeddata.es/shapes#684add183383f40ee3e60082fcfcfb39> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass qudt:Concept .
+
+<https://astrea.linkeddata.es/shapes#69bfc24827569ed9036ecae89a53d3c7> a sh:PropertyShape ;
+    rdfs:isDefinedBy skos: ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path skos:inScheme .
+
+<https://astrea.linkeddata.es/shapes#70f3c6343f52da6500f95ca0fca6f56e> a sh:NodeShape ;
+    rdfs:label "Autonomía"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description "Comunidad Autónoma o Ciudad Autónoma"@es ;
+    sh:name "Autonomía"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> .
+
+<https://astrea.linkeddata.es/shapes#7d31e878918619ad12be68dcc0363395> a sh:NodeShape ;
+    rdfs:label "Organization"@en,
+        "Organización"@es ;
+    sh:description "An organization such as a school, NGO, corporation, club, etc."@en,
+        "Una organización como una escuela, una ONG, una corporación, un club, etc."@es ;
+    sh:name "Organization"@en,
+        "Organización"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass schema:Organization .
+
+<https://astrea.linkeddata.es/shapes#7d482eb871622dc4066b4b983184ab78> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#88d3f022bbe5ad4138183c6dd3f64ebf> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass saref:Device .
+
+<https://astrea.linkeddata.es/shapes#8c9f0a3ef50fe390869f7c693885d425> a sh:NodeShape ;
+    rdfs:label "Feature"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0> ;
+    sh:description "Esta clase representa el tipo \"feature\" de nivel superior. Es equivalente a GFI_Feature, definida en la norma ISO 19156:2011, y es la superclase de todos los tipos de \"feature\"."@es ;
+    sh:name "Feature"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#3348f96caa15fb50d86f0a2231585642> ;
+    sh:targetClass geo:Feature .
+
+<https://astrea.linkeddata.es/shapes#8ef1ba038357601c5128fb6fd422964c> a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path qudt:unitFor .
+
+<https://astrea.linkeddata.es/shapes#993b6589c994d15205e34fdcbae76687> a sh:NodeShape ;
+    rdfs:label "Distrito"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description "Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]"@es ;
+    sh:name "Distrito"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> .
+
+<https://astrea.linkeddata.es/shapes#9e81a8547fd8cabc79752e243c8d2b67> a sh:NodeShape ;
+    rdfs:label "Geometry"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0>,
+        "Geometría"@es ;
+    sh:description "La clase representa el tipo de geometría de nivel superior. Esta clase es equivalente a la clase UML GM_Object definida en la norma ISO 19107 y es la superclase de todos los tipos de geometría."@es ;
+    sh:name "Geometry"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass geo:Geometry .
+
+<https://astrea.linkeddata.es/shapes#9e8fc937658bda7beceb6a3c16537508> a sh:PropertyShape ;
+    rdfs:label "An unambiguous reference to the resource within a given context."@en,
+        "identifier"@en,
+        "Una referencia no ambigüa al recurso dentro de un contexto determinado."@es,
+        "identificador"@es ;
+    rdfs:isDefinedBy dcterms: ;
+    sh:datatype rdfs:Literal ;
+    sh:description "An unambiguous reference to the resource within a given context."@en,
+        "Una referencia no ambigüa al recurso dentro de un contexto determinado."@es ;
+    sh:name "identifier"@en,
+        "identificador"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path dcterms:identifier .
+
+<https://astrea.linkeddata.es/shapes#a0a994d3ba276706a5a33df3630eb316> a sh:NodeShape ;
+    rdfs:label "Infrastructure element"@en,
+        "Elemento de la infraestructura"@es ;
+    sh:description "Represents the set of all infrastructure elements that generate mobility and urban elements such as traffic lights, road signs, bollards, etc."@en,
+        "Representa el conjunto de todos los elementos de la infraestructura que generan movilidad y elementos urbanos tales como semáforos, señales viales, pilonas, etc."@es ;
+    sh:name "Infrastructure element"@en,
+        "Elemento de la infraestructura"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#1efd492657fc833ec4339798a82c21d7>,
+        <https://astrea.linkeddata.es/shapes#2d6c8e4d8e46cebbbf18310d6d0ccdd4> ;
+    sh:targetClass edintinf:InfrastructureElement .
+
+<https://astrea.linkeddata.es/shapes#a631c84768ff3e5f04fb1d6567ba75be> a sh:PropertyShape ;
+    rdfs:label "Position of an instant, expressed using xsd:gYearMonth"@en,
+        "in XSD g-YearMonth"@en,
+        "Posición de un instante, expresado utilizando xsd:gYearMonth."@es,
+        "en año-mes gregoriano XSD"@es ;
+    rdfs:isDefinedBy time: ;
+    sh:datatype xsd:gYearMonth ;
+    sh:description "Position of an instant, expressed using xsd:gYearMonth"@en,
+        "Posición de un instante, expresado utilizando xsd:gYearMonth."@es ;
+    sh:name "in XSD g-YearMonth"@en,
+        "en año-mes gregoriano XSD"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path time:inXSDgYearMonth ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#ab94cb7be7a93617a4d257494047f5f6> a sh:NodeShape ;
+    rdfs:label "Estación de bicicletas"@es ;
+    rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica> ;
+    sh:description "Lugar donde se puede tanto dejar como recoger las bicicletas. Está compuesto de anclajes"@es ;
+    sh:name "Estación de bicicletas"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta> .
+
+<https://astrea.linkeddata.es/shapes#aee6d1ae38b15dcf3b340395888e35de> a sh:NodeShape ;
+    rdfs:label "Facility"@en,
+        "Equipamiento"@es ;
+    sh:description "It refers to service buildings (public or private), leisure areas, commercial areas or any other element that directly affects mobility, acting as a focus of attraction for persons or vehicles."@en,
+        "Hace referencia a edificios de servicios (públicos o privados), zonas de ocio, zonas comerciales o cualquier otro elemento  que afecte directamente a la movilidad, actuando como un foco de atracción de personas o vehículos."@es ;
+    sh:name "Facility"@en,
+        "Equipamiento"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edintinf:Facility .
+
+<https://astrea.linkeddata.es/shapes#aef1a78016b3598e01dd7671934b50b4> a sh:NodeShape ;
+    rdfs:isDefinedBy skos: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:ConceptScheme .
+
+<https://astrea.linkeddata.es/shapes#b0e4858dd6a7fdf0deca7b1a3e325357> a sh:NodeShape ;
+    rdfs:label "Observable Property",
+        "Propiedad observable"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:description "Una cualidad observable (propiedad, característica) de una entidad de interés."@es ;
+    sh:name "Observable Property",
+        "Propiedad observable"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass sosa:ObservableProperty .
+
+<https://astrea.linkeddata.es/shapes#b29c323cc06e9c6c8210c13b868f65d7> a sh:NodeShape ;
+    rdfs:label "Barrio"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description "Un barrio es cada una de las partes en que se dividen los pueblos grandes o sus distritos [fuente: Diccionario de la Real Academia (DRAE) 2011]"@es ;
+    sh:name "Barrio"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> .
+
+<https://astrea.linkeddata.es/shapes#bad3f689aa7ad6543bd53f433988f6ad> a sh:NodeShape ;
+    rdfs:label "Utility supply point"@en,
+        "Punto de suministro de servicio"@es ;
+    sh:description "Point of the infrastructure element where a utility is supplied. Generally associated with a utility meter (sensor)."@en,
+        "Punto en donde se realiza el suministro de un servicio para un elemento de la infraestructura municipal. Asociado en general a un medidor (sensor)."@es ;
+    sh:name "Utility supply point"@en,
+        "Punto de suministro de servicio"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint> .
+
+<https://astrea.linkeddata.es/shapes#c61898f24403ef1f26f4d3767e07d074> a sh:NodeShape ;
+    rdfs:label "Meter"@en ;
+    sh:description "A device designed to observe and additionally do some computation and/or display one or more properties of one or more features of interest."@en ;
+    sh:name "Meter"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass saref:Meter .
+
+<https://astrea.linkeddata.es/shapes#c91a2fd84c60bb353d8e5b8980436faf> a sh:NodeShape ;
+    rdfs:label "Section of Track"@en,
+        "Tramo"@es ;
+    rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/transporte/trafico> ;
+    sh:description "Section/s of a Track defined by a starting and an ending Point."@en,
+        "Tramo definido por un punto de inicio y fin que puede pertenecer a una o más vías"@es ;
+    sh:name "Section of Track"@en,
+        "Tramo"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo> .
+
+<https://astrea.linkeddata.es/shapes#cc1d89194f8396fb3bc8b1c15ad60409> a sh:NodeShape ;
+    rdfs:label "Utility consumption"@en,
+        "Consumo suministro"@es ;
+    sh:description "Amount of utility consumed over a specific period."@en,
+        "Cantidad de suministro consumido durante un período específico."@es ;
+    sh:name "Utility consumption"@en,
+        "Consumo suministro"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityConsumption> .
+
+<https://astrea.linkeddata.es/shapes#d1970d838f4f4ed864b70a4170b43c10> a sh:NodeShape ;
+    rdfs:label "A utility rate is the specific price structure or tariff charged by a service provider for a unit of consumption of a utility, such as kilowatt-hours of electricity or cubic meters of water."@en,
+        "Utility rate"@en,
+        "La tarifa de un suministro es la estructura de precios o tarifa específica que cobra un proveedor de suministros por una unidad de consumo de un suministro, como kilovatios-hora de electricidad o metros cúbicos de agua."@es,
+        "Tarifa suministro"@es ;
+    sh:name "A utility rate is the specific price structure or tariff charged by a service provider for a unit of consumption of a utility, such as kilowatt-hours of electricity or cubic meters of water."@en,
+        "Utility rate"@en,
+        "La tarifa de un suministro es la estructura de precios o tarifa específica que cobra un proveedor de suministros por una unidad de consumo de un suministro, como kilovatios-hora de electricidad o metros cúbicos de agua."@es,
+        "Tarifa suministro"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityRate> .
+
+<https://astrea.linkeddata.es/shapes#d40be55aa3b3a2eb9d391f26c29613c2> a sh:NodeShape ;
+    rdfs:label "Photovoltaic system contract"@en,
+        "Contrato instalación fotovoltaica"@es ;
+    sh:description "Legally binding document outlining the sale, lease, or power purchase agreement for solar panels."@en,
+        "Documento legalmente vinculante que describe el contrato de venta, arrendamiento o compra de energía para paneles solares."@es ;
+    sh:name "Photovoltaic system contract"@en,
+        "Contrato instalación fotovoltaica"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#54d045e0e1dc8364ab756e8cece82996>,
+        <https://astrea.linkeddata.es/shapes#79304df38dde4d2a80fae0dc3b029c95>,
+        <https://astrea.linkeddata.es/shapes#af2a6128cd5429eac504cbecfbb1bc7a> ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystemContract> .
+
+<https://astrea.linkeddata.es/shapes#d821e1e2099d642f041ed7eededffd7b> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#d962715fbf72868c0c9961959a58b34e> a sh:PropertyShape ;
+    rdfs:label "Supports the association of a temporal entity (instant or interval) to any thing"@en,
+        "has time"@en,
+        "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa."@es,
+        "tiene tiempo"@es ;
+    sh:class time:TemporalEntity ;
+    sh:description "Supports the association of a temporal entity (instant or interval) to any thing"@en,
+        "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa."@es ;
+    sh:name "has time"@en,
+        "tiene tiempo"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path time:hasTime .
+
+<https://astrea.linkeddata.es/shapes#dddafd262aa791bd70f31dd605700600> a sh:NodeShape ;
+    rdfs:label "Photovoltaic generation"@en,
+        "Generación fotovoltaica"@es ;
+    sh:description "Amount of electricity generated, consumed, stored and exported during a certain period of time."@en,
+        "Cantidad de electricidad generada, consumida, almacenada y exportada durante un período de tiempo determinado."@es ;
+    sh:name "Photovoltaic generation"@en,
+        "Generación fotovoltaica"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicGeneration> .
+
+<https://astrea.linkeddata.es/shapes#ddf65e0c217909b6729c55cec1519969> a sh:NodeShape ;
+    rdfs:label "Photovoltaic system"@en,
+        "Instalación fotovoltaica"@es ;
+    sh:description "A photovoltaic (PV) system, or solar power system converts sunlight directly into electricity using semiconductor materials, typically silicon, within solar panels. These systems, ranging from residential rooftops to large utility-scale power plants, consist of solar panels, inverters to convert DC to AC electricity, and mounting structures."@en,
+        "Un sistema fotovoltaico o sistema de energía solar, convierte la luz solar directamente en electricidad mediante materiales semiconductores, generalmente silicio, ubicados en paneles solares. Estos sistemas, que abarcan desde tejados residenciales hasta grandes centrales eléctricas, constan de paneles solares, inversores para convertir la corriente continua en corriente alterna y estructuras de montaje."@es ;
+    sh:name "Photovoltaic system"@en,
+        "Instalación fotovoltaica"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#3ae4770d8fd9809223d828c3acadcecb>,
+        <https://astrea.linkeddata.es/shapes#d69e4369582876c98cdecbccc14a48f6>,
+        <https://astrea.linkeddata.es/shapes#f12591ffde930ece0521c6c423264260> ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem> .
+
+<https://astrea.linkeddata.es/shapes#e18c11e8b6ed7ca683476b01b80c361e> a sh:NodeShape ;
+    rdfs:label "Utility contract"@en,
+        "Contrato suministro"@es ;
+    sh:description "Agreement between a utility provider and a consumer that defines the terms, rates, service quality, and responsibilities for providing essential utilities like electricity, water, gas, etc."@en,
+        "Acuerdo entre un proveedor de suministros y un consumidor que define los términos, tarifas, calidad del suministro y responsabilidades para la prestación de suministros esenciales como electricidad, agua, gas, etc."@es ;
+    sh:name "Utility contract"@en,
+        "Contrato suministro"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#3b612a5482329266c6abc925f2cf2f88>,
+        <https://astrea.linkeddata.es/shapes#956baf39b1b058e8934cb617d80c57d3>,
+        <https://astrea.linkeddata.es/shapes#e0bbfe4e331d3e32080f2276e8d1ce34> ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityContract> .
+
+<https://astrea.linkeddata.es/shapes#e4f8f8b501b2ca66a414aa9bc2ee33cf> a sh:PropertyShape ;
+    rdfs:label "The manufacturer of the product."@en,
+        "manufacturer"@en,
+        "El fabricante del producto."@es,
+        "fabricante"@es ;
+    rdfs:isDefinedBy schema1: ;
+    sh:class schema:Organization ;
+    sh:description "The manufacturer of the product."@en,
+        "El fabricante del producto."@es ;
+    sh:name "manufacturer"@en,
+        "fabricante"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema1:manufacturer .
+
+<https://astrea.linkeddata.es/shapes#e61935f1cc0fbdc80be67c061e1cbf71> a sh:NodeShape ;
+    rdfs:label "Observation",
+        "Observación"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:description "Acto de realizar un procedimiento (de observación) para estimar o calcular el valor de una propiedad de una característica de interés. Se vincula a un sensor para describir qué realizó la observación y cómo; se vincula a una propiedad observable para describir de qué propiedad es la estimación del resultado, y a una característica de interés para detallar con qué se asoció esa propiedad."@es ;
+    sh:name "Observation",
+        "Observación"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#82ac0ee2607c4d742aa0dafe16a38558>,
+        <https://astrea.linkeddata.es/shapes#b28f1a50b3141c95955799dfa1cd4295>,
+        <https://astrea.linkeddata.es/shapes#c8ba0e30ea76a68976d6ab2f0d9ce576>,
+        <https://astrea.linkeddata.es/shapes#f4b3df753bc2c96f73b6c78451bbe220> ;
+    sh:targetClass sosa:Observation .
+
+<https://astrea.linkeddata.es/shapes#e85f7f569c1b43b31809a79038a33ed0> a sh:NodeShape ;
+    rdfs:label "Feature Of Interest"@en,
+        "Entidad de interés"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:description "Cosa cuya propiedad se está estimando o calculando en el curso de una Observación para llegar a un Resultado o cuya propiedad está siendo manipulada por un Actuador, o que está siendo muestreada o transformada en un acto de Muestreo."@es ;
+    sh:name "Feature Of Interest"@en,
+        "Entidad de interés"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass sosa:FeatureOfInterest .
+
+<https://astrea.linkeddata.es/shapes#eef4e9102f8c4e433815a9af41e4f720> a sh:NodeShape ;
+    rdfs:label "Sensor"@en,
+        "Sensor"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:description "Sistema que implementa un procedimiento de observación para determinar el valor de una Propiedad observable.Puede ser un dispositivo, una infraestructura, un agente (incluyendo humanos) o software (simulación). Un sensor responde a un estímulo, por ejemplo, un cambio en el entorno o datos de entrada compuestos por los resultados de observaciones previas."@es ;
+    sh:name "Sensor"@en,
+        "Sensor"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#c78adf719f2fc347d9729f079d86324b> ;
+    sh:targetClass sosa:Sensor .
+
+<https://astrea.linkeddata.es/shapes#f19d0a17684b91303d6dc328e9cf2fb7> a sh:PropertyShape ;
+    rdfs:label "has unit" ;
+    rdfs:isDefinedBy <http://qudt.org/3.1.11/schema/shacl/qudt>,
+        <http://qudt.org/schema/qudt> ;
+    sh:name "has unit" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path qudt:hasUnit .
+
+<https://astrea.linkeddata.es/shapes#f1ed01ff4ad7e0110c28d4231cd9616c> a sh:NodeShape ;
+    rdfs:label "Time interval"@en,
+        "entidad temporal"@es,
+        "intervalo de tiempo"@es ;
+    sh:description "A temporal entity with an extent or duration"@en,
+        "Un intervalo temporal o un instante."@es,
+        "Una entidad temporal con una extensión o duración."@es ;
+    sh:name "Time interval"@en,
+        "entidad temporal"@es,
+        "intervalo de tiempo"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#2532894d090d3f1667f7f7b6da65df98>,
+        <https://astrea.linkeddata.es/shapes#75b684fc1c2b1d96cee32ddf1e4e2934>,
+        <https://astrea.linkeddata.es/shapes#8d26f56ec9e75266434f08dc7f5c2047> ;
+    sh:targetClass time:Interval .
+
+<https://astrea.linkeddata.es/shapes#f5a91cdc5d6f2dbcfc22b5256cb28058> a sh:NodeShape ;
+    rdfs:label "Parking"@en,
+        "Aparcamiento"@es ;
+    sh:description "Parking for different types of vehicles, including off-street parking facilities or on-street parking zones for residents, non-residents, or free parking."@en,
+        "Aparcamiento para diferentes tipos de vehículo que incluye instalaciones o superficies de aparcamiento fuera de la vía pública o zonas de aparcamiento en la vía pública para residentes, no residentes o libres."@es ;
+    sh:name "Parking"@en,
+        "Aparcamiento"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> .
+
+<https://astrea.linkeddata.es/shapes#fa78cfbce37dbcb34ab378481e7243c2> a sh:NodeShape ;
+    rdfs:label "Quantity value" ;
+    rdfs:isDefinedBy <http://qudt.org/schema/qudt> ;
+    sh:description "A Quantity Value  expresses the magnitude and kind of a quantity and is given by the product of a numerical value n and a unit of measure U. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit. Refer to \"http://physics.nist.gov/Pubs/SP811/sec07.html\", NIST SP 811 section 7,  for more on quantity values."@en ;
+    sh:name "Quantity value" ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#b6f09ea14b356f677ecafa6b46a9b43c> ;
+    sh:targetClass qudt:QuantityValue .
+
+<https://astrea.linkeddata.es/shapes#fbbdec372458b6ca648be3b4d8fb667e> a sh:NodeShape ;
+    rdfs:label "Municipio"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description """Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN.
+Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do"""@es ;
+    sh:name "Municipio"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> .
+
+<https://astrea.linkeddata.es/shapes#fbd4ab2d5fae631f5508a529d1eec812> a sh:PropertyShape ;
+    rdfs:label "The simple value of an Observation or Actuation or act of Sampling."@en,
+        "has simple result"@en ;
+    rdfs:isDefinedBy sosa:,
+        <http://www.w3.org/ns/sosa/common/> ;
+    sh:description "The simple value of an Observation or Actuation or act of Sampling."@en ;
+    sh:name "has simple result"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path sosa:hasSimpleResult .
+
+<https://astrea.linkeddata.es/shapes#ffeaf0d3664c31215f614a64f5bb45a5> a sh:NodeShape ;
+    rdfs:isDefinedBy skos: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:Concept .
+
+<https://astrea.linkeddata.es/shapes#1efd492657fc833ec4339798a82c21d7> a sh:PropertyShape ;
+    rdfs:label "Relationship between an infrastructure element and the photovoltaic system that feeds power into the elemen's electrical system. It may be installed on any of the element's structures (e.g. rooftop) or in a separate structure  (e.g., ground-mounted)."@en,
+        "has photovoltaic system"@en,
+        "Relación entre un elemento de infraestructura y el sistema fotovoltaico que suministra energía al sistema eléctrico de dicho elemento. Puede estar instalado en cualquiera de las estructuras del elemento (por ejemplo, en la azotea) o en una estructura independiente (por ejemplo, en el suelo)."@es,
+        "tiene instalación fotovoltaica"@es ;
+    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem> ;
+    sh:description "Relationship between an infrastructure element and the photovoltaic system that feeds power into the elemen's electrical system. It may be installed on any of the element's structures (e.g. rooftop) or in a separate structure  (e.g., ground-mounted)."@en,
+        "Relación entre un elemento de infraestructura y el sistema fotovoltaico que suministra energía al sistema eléctrico de dicho elemento. Puede estar instalado en cualquiera de las estructuras del elemento (por ejemplo, en la azotea) o en una estructura independiente (por ejemplo, en el suelo)."@es ;
+    sh:name "has photovoltaic system"@en,
+        "tiene instalación fotovoltaica"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#hasPhotovoltaicSystem> .
+
+<https://astrea.linkeddata.es/shapes#2c05aff6cdb8e4832c0587b142f0256d> a sh:PropertyShape ;
+    rdfs:label "xETRS89",
+        "X-Coordinate in meters (ETRS89)"@en,
+        "Coordenada X en metros (ETRS89)"@es ;
+    rdfs:isDefinedBy <https://datos.ign.es/def/geo_core#> ;
+    sh:datatype xsd:float ;
+    sh:description "X-Coordinate in meters (ETRS89)"@en,
+        "Coordenada X en metros (ETRS89)"@es ;
+    sh:name "xETRS89" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <https://datos.ign.es/def/geo_core#xETRS89> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#2d6c8e4d8e46cebbbf18310d6d0ccdd4> a sh:PropertyShape ;
+    rdfs:label "Relationship between an infrastructure element and a utility supply point."@en,
+        "has utility supply point"@en,
+        "Relación entre un elemento de la infraestructura y un punto de suministro de servicio."@es,
+        "tiene punto de suministro de servicio"@es ;
+    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint> ;
+    sh:description "Relationship between an infrastructure element and a utility supply point."@en,
+        "Relación entre un elemento de la infraestructura y un punto de suministro de servicio."@es ;
+    sh:name "has utility supply point"@en,
+        "tiene punto de suministro de servicio"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasUtilitySupplyPoint> .
+
+<https://astrea.linkeddata.es/shapes#3348f96caa15fb50d86f0a2231585642> a sh:PropertyShape ;
+    rdfs:label "has geometry"@en,
+        "Una representación espacial de un \"feature\" determinado."@es,
+        "tiene geometría"@es ;
+    rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0> ;
+    sh:class geo:Geometry ;
+    sh:description "Una representación espacial de un \"feature\" determinado."@es ;
+    sh:name "has geometry"@en,
+        "tiene geometría"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path geo:hasGeometry .
+
+<https://astrea.linkeddata.es/shapes#3ae4770d8fd9809223d828c3acadcecb> a sh:PropertyShape ;
+    rdfs:label "Organization that installed the system."@en,
+        "installation organization"@en,
+        "Organización que realizó la instalación del sistema."@es,
+        "organización instaladora"@es ;
+    sh:class schema:Organization ;
+    sh:description "Organization that installed the system."@en,
+        "Organización que realizó la instalación del sistema."@es ;
+    sh:name "installation organization"@en,
+        "organización instaladora"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#installationOrganization> .
+
+<https://astrea.linkeddata.es/shapes#3b612a5482329266c6abc925f2cf2f88> a sh:PropertyShape ;
+    rdfs:label "Relationship between a utility contracto and the rate that is applied in the contract."@en,
+        "has rate"@en,
+        "Relación entre un contrato de suministro de un servicio y la tarifa que se aplica en dicho contrato."@es,
+        "tiene tarifa"@es ;
+    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityRate> ;
+    sh:description "Relationship between a utility contracto and the rate that is applied in the contract."@en,
+        "Relación entre un contrato de suministro de un servicio y la tarifa que se aplica en dicho contrato."@es ;
+    sh:name "has rate"@en,
+        "tiene tarifa"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasRate> .
+
+<https://astrea.linkeddata.es/shapes#54d045e0e1dc8364ab756e8cece82996> a sh:PropertyShape ;
+    rdfs:label "Relationship between a photovoltaic installation contract and the organization that holds the contract."@en,
+        "contract holder"@en,
+        "Relación entre un contrato de una instalación fotovoltaica y la organización que es titular del contrato."@es,
+        "titular contrato"@es ;
+    sh:class schema:Organization ;
+    sh:description "Relationship between a photovoltaic installation contract and the organization that holds the contract."@en,
+        "Relación entre un contrato de una instalación fotovoltaica y la organización que es titular del contrato."@es ;
+    sh:name "contract holder"@en,
+        "titular contrato"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#contractHolder> .
+
+<https://astrea.linkeddata.es/shapes#79304df38dde4d2a80fae0dc3b029c95> a sh:PropertyShape ;
+    rdfs:label "Relationship between a photovoltaic system contract and the rate that is applied in the contract."@en,
+        "has rate"@en,
+        "Relación entre un contrato de una inslación fotovoltaica y la tarifa que se aplica en dicho contrato."@es,
+        "tiene tarifa"@es ;
+    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystemRate> ;
+    sh:description "Relationship between a photovoltaic system contract and the rate that is applied in the contract."@en,
+        "Relación entre un contrato de una inslación fotovoltaica y la tarifa que se aplica en dicho contrato."@es ;
+    sh:name "has rate"@en,
+        "tiene tarifa"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#hasRate> .
+
+<https://astrea.linkeddata.es/shapes#82ac0ee2607c4d742aa0dafe16a38558> a sh:PropertyShape ;
+    rdfs:label "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."@en,
+        "result time"@en ;
+    rdfs:isDefinedBy sosa:,
+        <http://www.w3.org/ns/sosa/common/> ;
+    sh:datatype xsd:dateTime ;
+    sh:description "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."@en ;
+    sh:name "result time"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path sosa:resultTime ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#956baf39b1b058e8934cb617d80c57d3> a sh:PropertyShape ;
+    rdfs:label "Relationship between the utility contract and the utillity supply point which it applies to."@en,
+        "applies to"@en,
+        "Relación entre el contrato de suministro y el punto de suministro de servicio al que se aplica."@es,
+        "aplicadoEn"@es ;
+    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint> ;
+    sh:description "Relationship between the utility contract and the utillity supply point which it applies to."@en,
+        "Relación entre el contrato de suministro y el punto de suministro de servicio al que se aplica."@es ;
+    sh:name "applies to"@en,
+        "aplicadoEn"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#appliesTo> .
+
+<https://astrea.linkeddata.es/shapes#af2a6128cd5429eac504cbecfbb1bc7a> a sh:PropertyShape ;
+    rdfs:label "Relationship between the photovoltaic system contract and the photovoltaic system which it applies to."@en,
+        "applies to"@en,
+        "Relación entre el contrato de la instalación fotovoltaica y la instalación fotovoltaica a la cual se aplica."@es,
+        "aplicadoEn"@es ;
+    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem> ;
+    sh:description "Relationship between the photovoltaic system contract and the photovoltaic system which it applies to."@en,
+        "Relación entre el contrato de la instalación fotovoltaica y la instalación fotovoltaica a la cual se aplica."@es ;
+    sh:name "applies to"@en,
+        "aplicadoEn"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#appliesTo> .
+
+<https://astrea.linkeddata.es/shapes#b28f1a50b3141c95955799dfa1cd4295> a sh:PropertyShape ;
+    rdfs:label "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."@en,
+        "observed property"@en ;
+    rdfs:isDefinedBy sosa:,
+        <http://www.w3.org/ns/sosa/obs/> ;
+    sh:class sosa:ObservableProperty ;
+    sh:description "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."@en ;
+    sh:name "observed property"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:observedProperty .
+
+<https://astrea.linkeddata.es/shapes#b6f09ea14b356f677ecafa6b46a9b43c> a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path qudt:hasUnit .
+
+<https://astrea.linkeddata.es/shapes#c78adf719f2fc347d9729f079d86324b> a sh:PropertyShape ;
+    rdfs:label "observes"@en,
+        "Relación entre un sensor y una propiedad observable que es capaz de detectar."@es,
+        "observa"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:class sosa:ObservableProperty ;
+    sh:description "Relación entre un sensor y una propiedad observable que es capaz de detectar."@es ;
+    sh:name "observes"@en,
+        "observa"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:observes .
+
+<https://astrea.linkeddata.es/shapes#c8ba0e30ea76a68976d6ab2f0d9ce576> a sh:PropertyShape ;
+    rdfs:label "has feature of interest",
+        "Una relación entre una Observación y la entidad cuya calidad fue observada, o entre una Actuación y la entidad cuya propiedad fue modificada, o entre un acto de muestreo y la entidad que fue muestreada."@es,
+        "tiene entidad de interés"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:class sosa:FeatureOfInterest ;
+    sh:description "Una relación entre una Observación y la entidad cuya calidad fue observada, o entre una Actuación y la entidad cuya propiedad fue modificada, o entre un acto de muestreo y la entidad que fue muestreada."@es ;
+    sh:name "has feature of interest",
+        "tiene entidad de interés"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:hasFeatureOfInterest .
+
+<https://astrea.linkeddata.es/shapes#d69e4369582876c98cdecbccc14a48f6> a sh:PropertyShape ;
+    rdfs:label "Date it was put into service.",
+        "in service date"@en,
+        "Fecha en que se puso en servicio."@es,
+        "fecha puesta en servicio"@es ;
+    sh:datatype xsd:date ;
+    sh:description "Date it was put into service.",
+        "Fecha en que se puso en servicio."@es ;
+    sh:name "in service date"@en,
+        "fecha puesta en servicio"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#inServiceDate> ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#e0bbfe4e331d3e32080f2276e8d1ce34> a sh:PropertyShape ;
+    rdfs:label "Relationship between a utility contract and the organization that holds the contract."@en,
+        "contract holder"@en,
+        "Relación entre un contrato de suministro de servicio y la organización que es titular del contrato."@es,
+        "titular contrato"@es ;
+    sh:class schema:Organization ;
+    sh:description "Relationship between a utility contract and the organization that holds the contract."@en,
+        "Relación entre un contrato de suministro de servicio y la organización que es titular del contrato."@es ;
+    sh:name "contract holder"@en,
+        "titular contrato"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#contractHolder> .
+
+<https://astrea.linkeddata.es/shapes#f12591ffde930ece0521c6c423264260> a sh:PropertyShape ;
+    rdfs:label "Total rated capacity of solar panels, measured in kilowatts (kW) or megawatts (MW), that have been mounted and connected to generate electricity."@en,
+        "installed photovoltaic power"@en,
+        "Capacidad nominal total de los paneles solares, medida en kilovatios (kW) o megavatios (MW), que se han instalado y conectado para generar electricidad."@es,
+        "potencia fotovoltaica instalada"@es ;
+    sh:datatype xsd:double ;
+    sh:description "Total rated capacity of solar panels, measured in kilowatts (kW) or megawatts (MW), that have been mounted and connected to generate electricity."@en,
+        "Capacidad nominal total de los paneles solares, medida en kilovatios (kW) o megavatios (MW), que se han instalado y conectado para generar electricidad."@es ;
+    sh:name "installed photovoltaic power"@en,
+        "potencia fotovoltaica instalada"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#installedPhotovoltaicPower> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#f4b3df753bc2c96f73b6c78451bbe220> a sh:PropertyShape ;
+    rdfs:label "made by sensor or observer"@en,
+        "Relación entre una observación y el sensor que realiza la observación."@es,
+        "realizado por sensor u observador"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:class sosa:Sensor ;
+    sh:description "Relación entre una observación y el sensor que realiza la observación."@es ;
+    sh:name "made by sensor or observer"@en,
+        "realizado por sensor u observador"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:madeBySensor .
+
+<https://astrea.linkeddata.es/shapes#fea379c748c9dad4793c340bbcb92040> a sh:PropertyShape ;
+    rdfs:label "yETRS89",
+        "Y-Coordinate in meters (ETRS89)"@en,
+        "Coordenada Y en metros (ETRS89)"@es ;
+    rdfs:isDefinedBy <https://datos.ign.es/def/geo_core#> ;
+    sh:datatype xsd:float ;
+    sh:description "Y-Coordinate in meters (ETRS89)"@en,
+        "Coordenada Y en metros (ETRS89)"@es ;
+    sh:name "yETRS89" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <https://datos.ign.es/def/geo_core#yETRS89> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#6fdcb6fa74959cc52414f19ced544249> a sh:PropertyShape ;
+    rdfs:label "Position of an instant, expressed using xsd:dateTimeStamp"@en,
+        "in XSD Date-Time-Stamp"@en,
+        "Posición de un instante, expresado utilizando xsd:dateTimeStamp."@es,
+        "en fecha-sello de tiempo XSD"@es ;
+    sh:datatype xsd:dateTimeStamp ;
+    sh:description "Position of an instant, expressed using xsd:dateTimeStamp"@en,
+        "Posición de un instante, expresado utilizando xsd:dateTimeStamp."@es ;
+    sh:name "in XSD Date-Time-Stamp"@en,
+        "en fecha-sello de tiempo XSD"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path time:inXSDDateTimeStamp .
+
+<https://astrea.linkeddata.es/shapes#b4f8e474ed84dd3b9666897649fb98e5> sh:class time:ProperInterval .
+
+<https://astrea.linkeddata.es/shapes#2532894d090d3f1667f7f7b6da65df98> a sh:PropertyShape ;
+    rdfs:label "Beginning of a temporal entity"@en,
+        "has beginning"@en,
+        "Comienzo de una entidad temporal."@es,
+        "tiene principio"@es ;
+    sh:class time:Instant ;
+    sh:description "Beginning of a temporal entity"@en,
+        "Comienzo de una entidad temporal."@es ;
+    sh:name "has beginning"@en,
+        "tiene principio"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path time:hasBeginning .
+
+<https://astrea.linkeddata.es/shapes#75b684fc1c2b1d96cee32ddf1e4e2934> a sh:PropertyShape ;
+    rdfs:label "Extent of a temporal entity, expressed using xsd:duration"@en,
+        "has XSD duration"@en,
+        "Extensión de una entidad temporal, expresada utilizando xsd:duration."@es,
+        "tiene duración XSD"@es ;
+    sh:datatype xsd:duration ;
+    sh:description "Extent of a temporal entity, expressed using xsd:duration"@en,
+        "Extensión de una entidad temporal, expresada utilizando xsd:duration."@es ;
+    sh:name "has XSD duration"@en,
+        "tiene duración XSD"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path time:hasXSDDuration ;
+    sh:pattern "-?P((([0-9]+Y([0-9]+M)?([0-9]+D)?|([0-9]+M)([0-9]+D)?|([0-9]+D))(T(([0-9]+H)([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|([0-9]+M)([0-9]+(\\.[0-9]+)?S)?|([0-9]+(\\.[0-9]+)?S)))?)|(T(([0-9]+H)([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|([0-9]+M)([0-9]+(\\.[0-9]+)?S)?|([0-9]+(\\.[0-9]+)?S))))" .
+
+<https://astrea.linkeddata.es/shapes#8d26f56ec9e75266434f08dc7f5c2047> a sh:PropertyShape ;
+    rdfs:label "End of a temporal entity."@en,
+        "has end"@en,
+        "Final de una entidad temporal."@es,
+        "tiene fin"@es ;
+    sh:class time:Instant ;
+    sh:description "End of a temporal entity."@en,
+        "Final de una entidad temporal."@es ;
+    sh:name "has end"@en,
+        "tiene fin"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path time:hasEnd .
+

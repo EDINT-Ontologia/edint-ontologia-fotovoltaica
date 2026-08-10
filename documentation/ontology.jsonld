@@ -2,7 +2,7 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/PhotovoltaicSystemStatus"
+    "@id" : "https://edint.es/kos/PhotovoltaicSystemStatus"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -11,7 +11,7 @@
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/PhotovoltaicSystemUsageType"
+    "@id" : "https://edint.es/kos/PhotovoltaicSystemUsageType"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -79,6 +79,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
@@ -236,7 +239,7 @@
     "@value" : "Estación de bicicletas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility"
+    "@id" : "https://edint.es/def/infraestructura#Facility"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo",
@@ -362,499 +365,6 @@
     "@id" : "http://www.opengis.net/ont/geosparql#Feature"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Aparcamiento para diferentes tipos de vehículo que incluye instalaciones o superficies de aparcamiento fuera de la vía pública o zonas de aparcamiento en la vía pública para residentes, no residentes o libres."
-  }, {
-    "@language" : "en",
-    "@value" : "Parking for different types of vehicles, including off-street parking facilities or on-street parking zones for residents, non-residents, or free parking."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Aparcamiento"
-  }, {
-    "@language" : "en",
-    "@value" : "Parking"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@value" : "2026-03-26"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Daniel Doña"
-  }, {
-    "@value" : "Edna Ruckhaus"
-  }, {
-    "@value" : "Lucía Sánchez"
-  }, {
-    "@value" : "Oscar Corcho"
-  }, {
-    "@value" : "Socorro Bernardos"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "es",
-    "@value" : "La ontología de instalaciones fotovoltaicas describe todos los conceptos relacionados con las instalaciones de este tipo que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red."
-  }, {
-    "@language" : "en",
-    "@value" : "The ontology of photovoltaic systems describes all the concepts related to installations of this type that are found in the elements of the infrastructure of a municipality and the measurement of the generation, consumption, accumulation and exported electricity into the grid."
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "es",
-    "@value" : "Ontología de Instalación Fotovoltaica"
-  }, {
-    "@language" : "en",
-    "@value" : "The Photovoltaic System Ontology"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@value" : "edintfotov"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica/0.1.0"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.0"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicGeneration",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Amount of electricity generated, consumed, stored and exported during a certain period of time."
-  }, {
-    "@language" : "es",
-    "@value" : "Cantidad de electricidad generada, consumida, almacenada y exportada durante un período de tiempo determinado."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Generación fotovoltaica"
-  }, {
-    "@language" : "en",
-    "@value" : "Photovoltaic generation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/Observation"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicMeter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Device that measures and records the total electricity produced by a solar panel system. It tracks electricity output in real-time and cumulatively (kilowatt-hours), helping to evaluate system performance, maximize efficiency, verify electricity savings, and manage grid interaction."
-  }, {
-    "@language" : "es",
-    "@value" : "Dispositivo que mide y registra la electricidad total producida por un sistema de paneles solares. Realiza un seguimiento de la producción de energía en tiempo real y de forma acumulativa (kilovatios-hora), lo que ayuda a evaluar el rendimiento del sistema, maximizar la eficiencia, verificar el ahorro energético y gestionar la interacción con la red eléctrica."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Medidor fotovoltaico"
-  }, {
-    "@language" : "en",
-    "@value" : "Photovoltaic meter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/Sensor"
-  }, {
-    "@id" : "https://saref.etsi.org/core/Meter"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A photovoltaic (PV) system, or solar power system converts sunlight directly into electricity using semiconductor materials, typically silicon, within solar panels. These systems, ranging from residential rooftops to large utility-scale power plants, consist of solar panels, inverters to convert DC to AC electricity, and mounting structures."
-  }, {
-    "@language" : "es",
-    "@value" : "Un sistema fotovoltaico o sistema de energía solar, convierte la luz solar directamente en electricidad mediante materiales semiconductores, generalmente silicio, ubicados en paneles solares. Estos sistemas, que abarcan desde tejados residenciales hasta grandes centrales eléctricas, constan de paneles solares, inversores para convertir la corriente continua en corriente alterna y estructuras de montaje."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Instalación fotovoltaica"
-  }, {
-    "@language" : "en",
-    "@value" : "Photovoltaic system"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
-  }, {
-    "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystemContract",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Documento legalmente vinculante que describe el contrato de venta, arrendamiento o compra de energía para paneles solares."
-  }, {
-    "@language" : "en",
-    "@value" : "Legally binding document outlining the sale, lease, or power purchase agreement for solar panels."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Contrato instalación fotovoltaica"
-  }, {
-    "@language" : "en",
-    "@value" : "Photovoltaic system contract"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystemRate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "La tarifa para instalaciones fotovoltaicas es un mecanismo que remunera a los propietarios de sistemas solares por el excedente de electricidad que generan y que vierten a la red eléctrica."
-  }, {
-    "@language" : "en",
-    "@value" : "Photovoltaic system rate"
-  }, {
-    "@language" : "es",
-    "@value" : "Tarifa instalación fotovoltaica"
-  }, {
-    "@language" : "en",
-    "@value" : "The photovoltaic system tariff is a policy mechanism that pays solar system owners for the surplus electricity they generate and feed back into the national grid."
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#appliesTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Relación entre el contrato de la instalación fotovoltaica y la instalación fotovoltaica a la cual se aplica."
-  }, {
-    "@language" : "en",
-    "@value" : "Relationship between the photovoltaic system contract and the photovoltaic system which it applies to."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystemContract"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "aplicadoEn"
-  }, {
-    "@language" : "en",
-    "@value" : "applies to"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#contractHolder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Relación entre un contrato de una instalación fotovoltaica y la organización que es titular del contrato."
-  }, {
-    "@language" : "en",
-    "@value" : "Relationship between a photovoltaic installation contract and the organization that holds the contract."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystemContract"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "contract holder"
-  }, {
-    "@language" : "es",
-    "@value" : "titular contrato"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://schema.org/Organization"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#generatedAndConsumedElectricity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "electricidad generada y consumida"
-  }, {
-    "@language" : "en",
-    "@value" : "generated and consumed electricity"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#generatedAndExportedElectricity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "electricidad generada y vertida"
-  }, {
-    "@language" : "en",
-    "@value" : "generated and exported electricity"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#generatedAndStoredElectricity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "consumo de aguaelectricidad generada y acumulada"
-  }, {
-    "@language" : "en",
-    "@value" : "generated and stored electricity"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#generatedElectricity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "electricidad generada"
-  }, {
-    "@language" : "en",
-    "@value" : "generated electricity"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#hasPhotovoltaicSystem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Relación entre un elemento de infraestructura y el sistema fotovoltaico que suministra energía al sistema eléctrico de dicho elemento. Puede estar instalado en cualquiera de las estructuras del elemento (por ejemplo, en la azotea) o en una estructura independiente (por ejemplo, en el suelo)."
-  }, {
-    "@language" : "en",
-    "@value" : "Relationship between an infrastructure element and the photovoltaic system that feeds power into the elemen's electrical system. It may be installed on any of the element's structures (e.g. rooftop) or in a separate structure  (e.g., ground-mounted)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has photovoltaic system"
-  }, {
-    "@language" : "es",
-    "@value" : "tiene instalación fotovoltaica"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#hasRate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Relación entre un contrato de una inslación fotovoltaica y la tarifa que se aplica en dicho contrato."
-  }, {
-    "@language" : "en",
-    "@value" : "Relationship between a photovoltaic system contract and the rate that is applied in the contract."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystemContract"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has rate"
-  }, {
-    "@language" : "es",
-    "@value" : "tiene tarifa"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystemRate"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#hasStatus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Indica si el sistema está actualmente \"Operativo\", \"Parcial\" o  \"Fuera de servicio\". Estos valores están definidos en una taxonomía (esquema de conceptos SKOS)."
-  }, {
-    "@language" : "en",
-    "@value" : "Indicates if the system is currently \"Operative,\" \"Partial\" or \"Out of service\". These values are defined in a taxonomy (SKOS concept sheme)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has status"
-  }, {
-    "@language" : "es",
-    "@value" : "tiene estado"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#hasUsageType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "El tipo de uso se define por la conexión del sistema a la red eléctrica:\n- Conectado a la red (On-Grid): Se conecta directamente a la red eléctrica, lo que permite la medición neta o la venta del excedente de energía sin necesidad de baterías.\n- Autónomo (Off-Grid): Funciona de forma independiente utilizando baterías para el almacenamiento, lo que garantiza un suministro eléctrico constante.\n- Híbrido: Combina la conexión a la red con el almacenamiento en baterías u otras fuentes de energía, como la eólica, ofreciendo una mayor fiabilidad.\nEstos conceptos se definen en una taxonomía (esquema de conceptos SKOS)."
-  }, {
-    "@language" : "en",
-    "@value" : "Usage type is defined by the connection of the system to the utility grid:\n- Grid-Connected (On-Grid): Directly linked to the electrical grid, allowing for net metering or selling excess power without batteries.\n- Stand-Alone (Off-Grid): Operates independently using batteries for storage to ensure a consistent power supply.\n- Hybrid: Combines grid connection with battery storage or other energy sources like wind, offering enhanced reliability.\nThese concepts are defined in a taxonomy (SKOS concept scheme)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has usage type"
-  }, {
-    "@language" : "es",
-    "@value" : "tiene tipo uso"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid2"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#inServiceDate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Fecha en que se puso en servicio."
-  }, {
-    "@value" : "Date it was put into service."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "fecha puesta en servicio"
-  }, {
-    "@language" : "en",
-    "@value" : "in service date"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#date"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#installationOrganization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Organización que realizó la instalación del sistema."
-  }, {
-    "@language" : "en",
-    "@value" : "Organization that installed the system."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "installation organization"
-  }, {
-    "@language" : "es",
-    "@value" : "organización instaladora"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://schema.org/Organization"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#installedPhotovoltaicPower",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Capacidad nominal total de los paneles solares, medida en kilovatios (kW) o megavatios (MW), que se han instalado y conectado para generar electricidad."
-  }, {
-    "@language" : "en",
-    "@value" : "Total rated capacity of solar panels, measured in kilowatts (kW) or megawatts (MW), that have been mounted and connected to generate electricity."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "installed photovoltaic power"
-  }, {
-    "@language" : "es",
-    "@value" : "potencia fotovoltaica instalada"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#double"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Hace referencia a edificios de servicios (públicos o privados), zonas de ocio, zonas comerciales o cualquier otro elemento  que afecte directamente a la movilidad, actuando como un foco de atracción de personas o vehículos."
-  }, {
-    "@language" : "en",
-    "@value" : "It refers to service buildings (public or private), leisure areas, commercial areas or any other element that directly affects mobility, acting as a focus of attraction for persons or vehicles."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Equipamiento"
-  }, {
-    "@language" : "en",
-    "@value" : "Facility"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Representa el conjunto de todos los elementos de la infraestructura que generan movilidad y elementos urbanos tales como semáforos, señales viales, pilonas, etc."
-  }, {
-    "@language" : "en",
-    "@value" : "Represents the set of all infrastructure elements that generate mobility and urban elements such as traffic lights, road signs, bollards, etc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Elemento de la infraestructura"
-  }, {
-    "@language" : "en",
-    "@value" : "Infrastructure element"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#UrbanElement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Comprende el inventario de elementos urbanos tales como señales viales, semáforos, pilonas, etc."
-  }, {
-    "@language" : "en",
-    "@value" : "It includes the inventory of urban elements such as road signs, traffic lights, bollards, etc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Elemento urbano"
-  }, {
-    "@language" : "en",
-    "@value" : "Urban element"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/PhotovoltaicSystemStatus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/PhotovoltaicSystemUsageType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-  } ]
-}, {
   "@id" : "http://www.opengis.net/ont/geosparql#Feature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -971,13 +481,6 @@
 }, {
   "@id" : "http://www.w3.org/2006/time#Instant",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A temporal entity with zero extent or duration"
-  }, {
-    "@language" : "es",
-    "@value" : "Una entidad temporal con una extensión o duración cero."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Time instant"
@@ -1001,13 +504,6 @@
 }, {
   "@id" : "http://www.w3.org/2006/time#Interval",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A temporal entity with an extent or duration"
-  }, {
-    "@language" : "es",
-    "@value" : "Una entidad temporal con una extensión o duración."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Time interval"
@@ -1031,13 +527,6 @@
 }, {
   "@id" : "http://www.w3.org/2006/time#TemporalEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A temporal interval or instant."
-  }, {
-    "@language" : "es",
-    "@value" : "Un intervalo temporal o un instante."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Temporal entity"
@@ -1283,10 +772,11 @@
     "@id" : "http://www.w3.org/ns/sosa/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Observable Property"
+  }, {
     "@language" : "es",
     "@value" : "Propiedad observable"
-  }, {
-    "@value" : "Observable Property"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/sosa/Observation",
@@ -1302,6 +792,7 @@
     "@language" : "es",
     "@value" : "Observación"
   }, {
+    "@language" : "en",
     "@value" : "Observation"
   } ]
 }, {
@@ -1590,7 +1081,7 @@
 }, {
   "@id" : "https://datos.ign.es/def/geo_core#xETRS89",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/source" : [ {
+  "http://purl.org/dc/terms/source" : [ {
     "@language" : "es",
     "@value" : "Catálogo de Objetos Geográficos BTN100."
   } ],
@@ -1616,7 +1107,7 @@
 }, {
   "@id" : "https://datos.ign.es/def/geo_core#yETRS89",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/source" : [ {
+  "http://purl.org/dc/terms/source" : [ {
     "@language" : "es",
     "@value" : "Catálogo de Objetos Geográficos BTN100."
   } ],
@@ -1638,6 +1129,507 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/aparcamiento#Parking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Aparcamiento para diferentes tipos de vehículo que incluye instalaciones o superficies de aparcamiento fuera de la vía pública o zonas de aparcamiento en la vía pública para residentes, no residentes o libres."
+  }, {
+    "@language" : "en",
+    "@value" : "Parking for different types of vehicles, including off-street parking facilities or on-street parking zones for residents, non-residents, or free parking."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Aparcamiento"
+  }, {
+    "@language" : "en",
+    "@value" : "Parking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://edint.es/def/infraestructura#Facility"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2026-03-26"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Daniel Doña"
+  }, {
+    "@value" : "Edna Ruckhaus"
+  }, {
+    "@value" : "Lucía Sánchez"
+  }, {
+    "@value" : "Oscar Corcho"
+  }, {
+    "@value" : "Socorro Bernardos"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "es",
+    "@value" : "La ontología de instalaciones fotovoltaicas describe todos los conceptos relacionados con las instalaciones de este tipo que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red."
+  }, {
+    "@language" : "en",
+    "@value" : "The ontology of photovoltaic systems describes all the concepts related to installations of this type that are found in the elements of the infrastructure of a municipality and the measurement of the generation, consumption, accumulation and exported electricity into the grid."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-03-26"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "es",
+    "@value" : "Ontología de Instalación Fotovoltaica"
+  }, {
+    "@language" : "en",
+    "@value" : "The Photovoltaic System Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "edintfotov"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica#"
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-fotovoltaica/releases/tag/v0.2.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.2.1"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicGeneration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Amount of electricity generated, consumed, stored and exported during a certain period of time."
+  }, {
+    "@language" : "es",
+    "@value" : "Cantidad de electricidad generada, consumida, almacenada y exportada durante un período de tiempo determinado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Generación fotovoltaica"
+  }, {
+    "@language" : "en",
+    "@value" : "Photovoltaic generation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Observation"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device that measures and records the total electricity produced by a solar panel system. It tracks electricity output in real-time and cumulatively (kilowatt-hours), helping to evaluate system performance, maximize efficiency, verify electricity savings, and manage grid interaction."
+  }, {
+    "@language" : "es",
+    "@value" : "Dispositivo que mide y registra la electricidad total producida por un sistema de paneles solares. Realiza un seguimiento de la producción de energía en tiempo real y de forma acumulativa (kilovatios-hora), lo que ayuda a evaluar el rendimiento del sistema, maximizar la eficiencia, verificar el ahorro energético y gestionar la interacción con la red eléctrica."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Medidor fotovoltaico"
+  }, {
+    "@language" : "en",
+    "@value" : "Photovoltaic meter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  }, {
+    "@id" : "https://saref.etsi.org/core/Meter"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A photovoltaic (PV) system, or solar power system converts sunlight directly into electricity using semiconductor materials, typically silicon, within solar panels. These systems, ranging from residential rooftops to large utility-scale power plants, consist of solar panels, inverters to convert DC to AC electricity, and mounting structures."
+  }, {
+    "@language" : "es",
+    "@value" : "Un sistema fotovoltaico o sistema de energía solar, convierte la luz solar directamente en electricidad mediante materiales semiconductores, generalmente silicio, ubicados en paneles solares. Estos sistemas, que abarcan desde tejados residenciales hasta grandes centrales eléctricas, constan de paneles solares, inversores para convertir la corriente continua en corriente alterna y estructuras de montaje."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Instalación fotovoltaica"
+  }, {
+    "@language" : "en",
+    "@value" : "Photovoltaic system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystemContract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Documento legalmente vinculante que describe el contrato de venta, arrendamiento o compra de energía para paneles solares."
+  }, {
+    "@language" : "en",
+    "@value" : "Legally binding document outlining the sale, lease, or power purchase agreement for solar panels."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Contrato instalación fotovoltaica"
+  }, {
+    "@language" : "en",
+    "@value" : "Photovoltaic system contract"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystemRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La tarifa para instalaciones fotovoltaicas es un mecanismo que remunera a los propietarios de sistemas solares por el excedente de electricidad que generan y que vierten a la red eléctrica."
+  }, {
+    "@language" : "en",
+    "@value" : "The photovoltaic system tariff is a policy mechanism that pays solar system owners for the surplus electricity they generate and feed back into the national grid."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Photovoltaic system rate"
+  }, {
+    "@language" : "es",
+    "@value" : "Tarifa instalación fotovoltaica"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#appliesTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre el contrato de la instalación fotovoltaica y la instalación fotovoltaica a la cual se aplica."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship between the photovoltaic system contract and the photovoltaic system which it applies to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystemContract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "aplicadoEn"
+  }, {
+    "@language" : "en",
+    "@value" : "applies to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystem"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#contractHolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre un contrato de una instalación fotovoltaica y la organización que es titular del contrato."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship between a photovoltaic installation contract and the organization that holds the contract."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystemContract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contract holder"
+  }, {
+    "@language" : "es",
+    "@value" : "titular contrato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Organization"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#generatedAndConsumedElectricity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "electricidad generada y consumida"
+  }, {
+    "@language" : "en",
+    "@value" : "generated and consumed electricity"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#generatedAndExportedElectricity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "electricidad generada y vertida"
+  }, {
+    "@language" : "en",
+    "@value" : "generated and exported electricity"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#generatedAndStoredElectricity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "consumo de aguaelectricidad generada y acumulada"
+  }, {
+    "@language" : "en",
+    "@value" : "generated and stored electricity"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#generatedElectricity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "electricidad generada"
+  }, {
+    "@language" : "en",
+    "@value" : "generated electricity"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#hasPhotovoltaicSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre un elemento de infraestructura y el sistema fotovoltaico que suministra energía al sistema eléctrico de dicho elemento. Puede estar instalado en cualquiera de las estructuras del elemento (por ejemplo, en la azotea) o en una estructura independiente (por ejemplo, en el suelo)."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship between an infrastructure element and the photovoltaic system that feeds power into the elemen's electrical system. It may be installed on any of the element's structures (e.g. rooftop) or in a separate structure  (e.g., ground-mounted)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/infraestructura#InfrastructureElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has photovoltaic system"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene instalación fotovoltaica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystem"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#hasRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre un contrato de una inslación fotovoltaica y la tarifa que se aplica en dicho contrato."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship between a photovoltaic system contract and the rate that is applied in the contract."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystemContract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has rate"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene tarifa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystemRate"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#hasStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica si el sistema está actualmente \"Operativo\", \"Parcial\" o  \"Fuera de servicio\". Estos valores están definidos en una taxonomía (esquema de conceptos SKOS)."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates if the system is currently \"Operative,\" \"Partial\" or \"Out of service\". These values are defined in a taxonomy (SKOS concept sheme)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has status"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene estado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#hasUsageType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El tipo de uso se define por la conexión del sistema a la red eléctrica:\n- Conectado a la red (On-Grid): Se conecta directamente a la red eléctrica, lo que permite la medición neta o la venta del excedente de energía sin necesidad de baterías.\n- Autónomo (Off-Grid): Funciona de forma independiente utilizando baterías para el almacenamiento, lo que garantiza un suministro eléctrico constante.\n- Híbrido: Combina la conexión a la red con el almacenamiento en baterías u otras fuentes de energía, como la eólica, ofreciendo una mayor fiabilidad.\nEstos conceptos se definen en una taxonomía (esquema de conceptos SKOS)."
+  }, {
+    "@language" : "en",
+    "@value" : "Usage type is defined by the connection of the system to the utility grid:\n- Grid-Connected (On-Grid): Directly linked to the electrical grid, allowing for net metering or selling excess power without batteries.\n- Stand-Alone (Off-Grid): Operates independently using batteries for storage to ensure a consistent power supply.\n- Hybrid: Combines grid connection with battery storage or other energy sources like wind, offering enhanced reliability.\nThese concepts are defined in a taxonomy (SKOS concept scheme)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has usage type"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene tipo uso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#inServiceDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Fecha en que se puso en servicio."
+  }, {
+    "@value" : "Date it was put into service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "fecha puesta en servicio"
+  }, {
+    "@language" : "en",
+    "@value" : "in service date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#installationOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Organización que realizó la instalación del sistema."
+  }, {
+    "@language" : "en",
+    "@value" : "Organization that installed the system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "installation organization"
+  }, {
+    "@language" : "es",
+    "@value" : "organización instaladora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Organization"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/fotovoltaica#installedPhotovoltaicPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Capacidad nominal total de los paneles solares, medida en kilovatios (kW) o megavatios (MW), que se han instalado y conectado para generar electricidad."
+  }, {
+    "@language" : "en",
+    "@value" : "Total rated capacity of solar panels, measured in kilowatts (kW) or megawatts (MW), that have been mounted and connected to generate electricity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "installed photovoltaic power"
+  }, {
+    "@language" : "es",
+    "@value" : "potencia fotovoltaica instalada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/infraestructura#Facility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Hace referencia a edificios de servicios (públicos o privados), zonas de ocio, zonas comerciales o cualquier otro elemento  que afecte directamente a la movilidad, actuando como un foco de atracción de personas o vehículos."
+  }, {
+    "@language" : "en",
+    "@value" : "It refers to service buildings (public or private), leisure areas, commercial areas or any other element that directly affects mobility, acting as a focus of attraction for persons or vehicles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Equipamiento"
+  }, {
+    "@language" : "en",
+    "@value" : "Facility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://edint.es/def/infraestructura#InfrastructureElement"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/infraestructura#InfrastructureElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa el conjunto de todos los elementos de la infraestructura que generan movilidad y elementos urbanos tales como semáforos, señales viales, pilonas, etc."
+  }, {
+    "@language" : "en",
+    "@value" : "Represents the set of all infrastructure elements that generate mobility and urban elements such as traffic lights, road signs, bollards, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Elemento de la infraestructura"
+  }, {
+    "@language" : "en",
+    "@value" : "Infrastructure element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/infraestructura#UrbanElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Comprende el inventario de elementos urbanos tales como señales viales, semáforos, pilonas, etc."
+  }, {
+    "@language" : "en",
+    "@value" : "It includes the inventory of urban elements such as road signs, traffic lights, bollards, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Elemento urbano"
+  }, {
+    "@language" : "en",
+    "@value" : "Urban element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://edint.es/def/infraestructura#InfrastructureElement"
+  } ]
+}, {
+  "@id" : "https://edint.es/kos/PhotovoltaicSystemStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ]
+}, {
+  "@id" : "https://edint.es/kos/PhotovoltaicSystemUsageType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core/Device",

@@ -18,7 +18,8 @@
      xmlns:schema="http://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edintinf="https://edint.es/def/infraestructura#"
-     xmlns:edintkos="https://edint.es/kos/">
+     xmlns:edintkos="https://edint.es/kos/"
+     xmlns:bibo="http://purl.org/ontology/bibo/">
     <owl:Ontology rdf:about="https://edint.es/def/fotovoltaica">
         <owl:versionIRI rdf:resource="https://edint.es/def/fotovoltaica"/>
         <dcterms:created>2026-03-26</dcterms:created>
@@ -37,7 +38,12 @@
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/fotovoltaica#"/>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-fotovoltaica/releases/tag/v0.2.0"/>
         <owl:versionInfo>0.2.1</owl:versionInfo>
-    </owl:Ontology>
+        <dcterms:publisher rdf:resource="https://www.femp.es/"/>
+    <dcterms:bibliographicCitation xml:lang="es">Ontología para la representación de las instalaciones fotovoltaicas de la infraestructura de un municipio. EDINT. Revision: v0.2.1.</dcterms:bibliographicCitation>
+    <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+    <dcterms:abstract xml:lang="es">El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de los conceptos relacionados con las instalaciones fotovoltaicas que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red realizada por estas instalaciones.</dcterms:abstract>
+    <dcterms:abstract xml:lang="en">The purpose of this ontology is to provide a common vocabulary for the representation of concepts related to photovoltaic systems found in the infrastructure elements of a municipality and the measurement of the generation, consumption, storage and export of electricity into the grid by these installations.</dcterms:abstract>
+</owl:Ontology>
     
 
 

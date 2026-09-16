@@ -52,7 +52,11 @@
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/fotovoltaica#"/>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-fotovoltaica/releases/tag/v0.2.0"/>
         <owl:versionInfo>0.2.1</owl:versionInfo>
-        <dcterms:publisher rdf:resource="https://www.femp.es/"/>
+        <dcterms:publisher rdf:parseType="Resource">
+            <foaf:name>FEMP</foaf:name>
+            <foaf:homepage rdf:resource="https://www.femp.es/"/>
+            <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+        </dcterms:publisher>
     <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Instalación Fotovoltaica. EDINT. Revision: v0.2.1.</dcterms:bibliographicCitation>
     <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
     <dcterms:abstract xml:lang="es">El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de los conceptos relacionados con las instalaciones fotovoltaicas que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red realizada por estas instalaciones.</dcterms:abstract>

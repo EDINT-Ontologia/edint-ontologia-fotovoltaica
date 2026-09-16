@@ -3,8 +3,8 @@
 PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX sosa:     <http://www.w3.org/ns/sosa/>
 PREFIX qudt:     <http://qudt.org/schema/qudt/>
-PREFIX edintfot: <http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#>
-PREFIX edintinf: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#>
+PREFIX edintfot: <https://edint.es/def/fotovoltaica#>
+PREFIX edintinf: <https://edint.es/def/infraestructura#>
 
 SELECT ?infrastructure (SUM(?value) AS ?totalGeneratedEnergy)
 WHERE {

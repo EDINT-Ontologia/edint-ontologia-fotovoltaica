@@ -5,7 +5,7 @@ PREFIX sosa:     <http://www.w3.org/ns/sosa/>
 PREFIX time:     <http://www.w3.org/2006/time#>
 PREFIX qudt:     <http://qudt.org/schema/qudt/>
 PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
-PREFIX edintfot: <http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#>
+PREFIX edintfot: <https://edint.es/def/fotovoltaica#>
 
 SELECT ?pvSystem (SUM(?value) AS ?generatedEnergy)
 WHERE {

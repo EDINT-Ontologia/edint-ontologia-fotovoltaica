@@ -188,7 +188,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="k">PREFIX</span> <span class="nn">time</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2006/time#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudt</span><span class="p">:</span>     <span class="nl">&lt;http://qudt.org/schema/qudt/&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/fotovoltaica#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?pvSystem</span> <span class="p">(</span><span class="nf">SUM</span><span class="p">(</span><span class="nv">?value</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?generatedEnergy</span><span class="p">)</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -215,7 +215,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <span class="query-title">FOT06: ¿Qué medidor fotovoltaico ha realizado cada observación de generación registrada?</span>
                         <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">rdf</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">sosa</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/ns/sosa/&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/fotovoltaica#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?observation</span> <span class="nv">?meter</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -232,7 +232,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <span class="query-title">FOT07: ¿A qué instalación fotovoltaica corresponde cada observación de generación?</span>
                         <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">rdf</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">sosa</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/ns/sosa/&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/fotovoltaica#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?observation</span> <span class="nv">?pvSystem</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -249,7 +249,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <span class="query-title">FOT08: ¿Cual es el estado operativo de la instalación fotovoltaica?</span>
                         <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">rdf</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/fotovoltaica#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?pvSystem</span> <span class="nv">?status</span> <span class="nv">?statusLabel</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -266,7 +266,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <span class="query-title">FOT09: ¿Cuál es el tipo de uso asociado a la instalación fotovoltaica?</span>
                         <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">rdf</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/fotovoltaica#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?pvSystem</span> <span class="nv">?usageType</span> <span class="nv">?usageLabel</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -283,7 +283,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <span class="query-title">FOT10: ¿Quién es el fabricante del medidor fotovoltaico?</span>
                         <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">rdf</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">schema</span><span class="p">:</span>   <span class="nl">&lt;https://schema.org/&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/fotovoltaica#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?meter</span> <span class="nv">?manufacturer</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -298,7 +298,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <div class="query-block">
                         <span class="query-title">FOT11: ¿Cuál es el periodo temporal asociado a cada observación de generación fotovoltaica?</span>
                         <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">sosa</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/ns/sosa/&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/fotovoltaica#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?observation</span> <span class="nv">?timeEntity</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -313,8 +313,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     <div class="query-block">
                         <span class="query-title">FOT12: ¿Dispone el elemento de infraestructura/edificio de una o varias instalaciones fotovoltaicas asociadas?</span>
                         <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">rdf</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintinf</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/fotovoltaica#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintinf</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/infraestructura#&gt;</span>
 
 <span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="nv">?infrastructure</span>
 <span class="k">WHERE</span> <span class="p">{</span>
@@ -332,8 +332,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">rdf</span><span class="p">:</span>      <span class="nl">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">sosa</span><span class="p">:</span>     <span class="nl">&lt;http://www.w3.org/ns/sosa/&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudt</span><span class="p">:</span>     <span class="nl">&lt;http://qudt.org/schema/qudt/&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#&gt;</span>
-<span class="k">PREFIX</span> <span class="nn">edintinf</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintfot</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/fotovoltaica#&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">edintinf</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/infraestructura#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?infrastructure</span> <span class="p">(</span><span class="nf">SUM</span><span class="p">(</span><span class="nv">?value</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?totalGeneratedEnergy</span><span class="p">)</span>
 <span class="k">WHERE</span> <span class="p">{</span>

@@ -2,7 +2,7 @@
 
 PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX sosa:     <http://www.w3.org/ns/sosa/>
-PREFIX edintfot: <http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#>
+PREFIX edintfot: <https://edint.es/def/fotovoltaica#>
 
 SELECT ?observation ?meter
 WHERE {

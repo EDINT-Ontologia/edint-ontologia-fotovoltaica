@@ -1,5 +1,5 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix edintinf: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#> .
+@prefix edintinf: <https://edint.es/def/infraestructura#> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -24,7 +24,7 @@
         "La tarifa para instalaciones fotovoltaicas es un mecanismo que remunera a los propietarios de sistemas solares por el excedente de electricidad que generan y que vierten a la red eléctrica."@es,
         "Tarifa instalación fotovoltaica"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystemRate> .
+    sh:targetClass <https://edint.es/def/fotovoltaica#PhotovoltaicSystemRate> .
 
 <https://astrea.linkeddata.es/shapes#0919e2248a4fbed2f30f1284cb8ad85c> a sh:NodeShape ;
     rdfs:label "Photovoltaic meter"@en,
@@ -34,7 +34,7 @@
     sh:name "Photovoltaic meter"@en,
         "Medidor fotovoltaico"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicMeter> .
+    sh:targetClass <https://edint.es/def/fotovoltaica#PhotovoltaicMeter> .
 
 <https://astrea.linkeddata.es/shapes#09e38f45c7086ab062de6d37e0b27ebb> a sh:PropertyShape ;
     rdfs:label "applicable unit" ;
@@ -54,7 +54,7 @@
     sh:name "Utility meter"@en,
         "Medidor suministro"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityMeter> .
+    sh:targetClass <https://edint.es/def/suministro#UtilityMeter> .
 
 <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171d6155a1b> a sh:NodeShape ;
     rdfs:label "Time instant"@en,
@@ -366,7 +366,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "Utility supply point"@en,
         "Punto de suministro de servicio"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint> .
+    sh:targetClass <https://edint.es/def/suministro#UtilitySupplyPoint> .
 
 <https://astrea.linkeddata.es/shapes#c61898f24403ef1f26f4d3767e07d074> a sh:NodeShape ;
     rdfs:label "Meter"@en ;
@@ -394,7 +394,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "Utility consumption"@en,
         "Consumo suministro"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityConsumption> .
+    sh:targetClass <https://edint.es/def/suministro#UtilityConsumption> .
 
 <https://astrea.linkeddata.es/shapes#d1970d838f4f4ed864b70a4170b43c10> a sh:NodeShape ;
     rdfs:label "A utility rate is the specific price structure or tariff charged by a service provider for a unit of consumption of a utility, such as kilowatt-hours of electricity or cubic meters of water."@en,
@@ -406,7 +406,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
         "La tarifa de un suministro es la estructura de precios o tarifa específica que cobra un proveedor de suministros por una unidad de consumo de un suministro, como kilovatios-hora de electricidad o metros cúbicos de agua."@es,
         "Tarifa suministro"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityRate> .
+    sh:targetClass <https://edint.es/def/suministro#UtilityRate> .
 
 <https://astrea.linkeddata.es/shapes#d40be55aa3b3a2eb9d391f26c29613c2> a sh:NodeShape ;
     rdfs:label "Photovoltaic system contract"@en,
@@ -419,7 +419,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:property <https://astrea.linkeddata.es/shapes#54d045e0e1dc8364ab756e8cece82996>,
         <https://astrea.linkeddata.es/shapes#79304df38dde4d2a80fae0dc3b029c95>,
         <https://astrea.linkeddata.es/shapes#af2a6128cd5429eac504cbecfbb1bc7a> ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystemContract> .
+    sh:targetClass <https://edint.es/def/fotovoltaica#PhotovoltaicSystemContract> .
 
 <https://astrea.linkeddata.es/shapes#d821e1e2099d642f041ed7eededffd7b> sh:nodeKind sh:Literal .
 
@@ -444,7 +444,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "Photovoltaic generation"@en,
         "Generación fotovoltaica"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicGeneration> .
+    sh:targetClass <https://edint.es/def/fotovoltaica#PhotovoltaicGeneration> .
 
 <https://astrea.linkeddata.es/shapes#ddf65e0c217909b6729c55cec1519969> a sh:NodeShape ;
     rdfs:label "Photovoltaic system"@en,
@@ -457,7 +457,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:property <https://astrea.linkeddata.es/shapes#3ae4770d8fd9809223d828c3acadcecb>,
         <https://astrea.linkeddata.es/shapes#d69e4369582876c98cdecbccc14a48f6>,
         <https://astrea.linkeddata.es/shapes#f12591ffde930ece0521c6c423264260> ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem> .
+    sh:targetClass <https://edint.es/def/fotovoltaica#PhotovoltaicSystem> .
 
 <https://astrea.linkeddata.es/shapes#e18c11e8b6ed7ca683476b01b80c361e> a sh:NodeShape ;
     rdfs:label "Utility contract"@en,
@@ -470,7 +470,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:property <https://astrea.linkeddata.es/shapes#3b612a5482329266c6abc925f2cf2f88>,
         <https://astrea.linkeddata.es/shapes#956baf39b1b058e8934cb617d80c57d3>,
         <https://astrea.linkeddata.es/shapes#e0bbfe4e331d3e32080f2276e8d1ce34> ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityContract> .
+    sh:targetClass <https://edint.es/def/suministro#UtilityContract> .
 
 <https://astrea.linkeddata.es/shapes#e4f8f8b501b2ca66a414aa9bc2ee33cf> a sh:PropertyShape ;
     rdfs:label "The manufacturer of the product."@en,
@@ -553,7 +553,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "Parking"@en,
         "Aparcamiento"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> .
+    sh:targetClass <https://edint.es/def/aparcamiento#Parking> .
 
 <https://astrea.linkeddata.es/shapes#fa78cfbce37dbcb34ab378481e7243c2> a sh:NodeShape ;
     rdfs:label "Quantity value" ;
@@ -593,13 +593,13 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
         "has photovoltaic system"@en,
         "Relación entre un elemento de infraestructura y el sistema fotovoltaico que suministra energía al sistema eléctrico de dicho elemento. Puede estar instalado en cualquiera de las estructuras del elemento (por ejemplo, en la azotea) o en una estructura independiente (por ejemplo, en el suelo)."@es,
         "tiene instalación fotovoltaica"@es ;
-    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem> ;
+    sh:class <https://edint.es/def/fotovoltaica#PhotovoltaicSystem> ;
     sh:description "Relationship between an infrastructure element and the photovoltaic system that feeds power into the elemen's electrical system. It may be installed on any of the element's structures (e.g. rooftop) or in a separate structure  (e.g., ground-mounted)."@en,
         "Relación entre un elemento de infraestructura y el sistema fotovoltaico que suministra energía al sistema eléctrico de dicho elemento. Puede estar instalado en cualquiera de las estructuras del elemento (por ejemplo, en la azotea) o en una estructura independiente (por ejemplo, en el suelo)."@es ;
     sh:name "has photovoltaic system"@en,
         "tiene instalación fotovoltaica"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#hasPhotovoltaicSystem> .
+    sh:path <https://edint.es/def/fotovoltaica#hasPhotovoltaicSystem> .
 
 <https://astrea.linkeddata.es/shapes#2c05aff6cdb8e4832c0587b142f0256d> a sh:PropertyShape ;
     rdfs:label "xETRS89",
@@ -619,13 +619,13 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
         "has utility supply point"@en,
         "Relación entre un elemento de la infraestructura y un punto de suministro de servicio."@es,
         "tiene punto de suministro de servicio"@es ;
-    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint> ;
+    sh:class <https://edint.es/def/suministro#UtilitySupplyPoint> ;
     sh:description "Relationship between an infrastructure element and a utility supply point."@en,
         "Relación entre un elemento de la infraestructura y un punto de suministro de servicio."@es ;
     sh:name "has utility supply point"@en,
         "tiene punto de suministro de servicio"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasUtilitySupplyPoint> .
+    sh:path <https://edint.es/def/suministro#hasUtilitySupplyPoint> .
 
 <https://astrea.linkeddata.es/shapes#3348f96caa15fb50d86f0a2231585642> a sh:PropertyShape ;
     rdfs:label "has geometry"@en,
@@ -650,20 +650,20 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "installation organization"@en,
         "organización instaladora"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#installationOrganization> .
+    sh:path <https://edint.es/def/fotovoltaica#installationOrganization> .
 
 <https://astrea.linkeddata.es/shapes#3b612a5482329266c6abc925f2cf2f88> a sh:PropertyShape ;
     rdfs:label "Relationship between a utility contracto and the rate that is applied in the contract."@en,
         "has rate"@en,
         "Relación entre un contrato de suministro de un servicio y la tarifa que se aplica en dicho contrato."@es,
         "tiene tarifa"@es ;
-    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityRate> ;
+    sh:class <https://edint.es/def/suministro#UtilityRate> ;
     sh:description "Relationship between a utility contracto and the rate that is applied in the contract."@en,
         "Relación entre un contrato de suministro de un servicio y la tarifa que se aplica en dicho contrato."@es ;
     sh:name "has rate"@en,
         "tiene tarifa"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasRate> .
+    sh:path <https://edint.es/def/suministro#hasRate> .
 
 <https://astrea.linkeddata.es/shapes#54d045e0e1dc8364ab756e8cece82996> a sh:PropertyShape ;
     rdfs:label "Relationship between a photovoltaic installation contract and the organization that holds the contract."@en,
@@ -676,20 +676,20 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "contract holder"@en,
         "titular contrato"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#contractHolder> .
+    sh:path <https://edint.es/def/fotovoltaica#contractHolder> .
 
 <https://astrea.linkeddata.es/shapes#79304df38dde4d2a80fae0dc3b029c95> a sh:PropertyShape ;
     rdfs:label "Relationship between a photovoltaic system contract and the rate that is applied in the contract."@en,
         "has rate"@en,
         "Relación entre un contrato de una inslación fotovoltaica y la tarifa que se aplica en dicho contrato."@es,
         "tiene tarifa"@es ;
-    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystemRate> ;
+    sh:class <https://edint.es/def/fotovoltaica#PhotovoltaicSystemRate> ;
     sh:description "Relationship between a photovoltaic system contract and the rate that is applied in the contract."@en,
         "Relación entre un contrato de una inslación fotovoltaica y la tarifa que se aplica en dicho contrato."@es ;
     sh:name "has rate"@en,
         "tiene tarifa"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#hasRate> .
+    sh:path <https://edint.es/def/fotovoltaica#hasRate> .
 
 <https://astrea.linkeddata.es/shapes#82ac0ee2607c4d742aa0dafe16a38558> a sh:PropertyShape ;
     rdfs:label "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."@en,
@@ -708,26 +708,26 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
         "applies to"@en,
         "Relación entre el contrato de suministro y el punto de suministro de servicio al que se aplica."@es,
         "aplicadoEn"@es ;
-    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint> ;
+    sh:class <https://edint.es/def/suministro#UtilitySupplyPoint> ;
     sh:description "Relationship between the utility contract and the utillity supply point which it applies to."@en,
         "Relación entre el contrato de suministro y el punto de suministro de servicio al que se aplica."@es ;
     sh:name "applies to"@en,
         "aplicadoEn"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#appliesTo> .
+    sh:path <https://edint.es/def/suministro#appliesTo> .
 
 <https://astrea.linkeddata.es/shapes#af2a6128cd5429eac504cbecfbb1bc7a> a sh:PropertyShape ;
     rdfs:label "Relationship between the photovoltaic system contract and the photovoltaic system which it applies to."@en,
         "applies to"@en,
         "Relación entre el contrato de la instalación fotovoltaica y la instalación fotovoltaica a la cual se aplica."@es,
         "aplicadoEn"@es ;
-    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#PhotovoltaicSystem> ;
+    sh:class <https://edint.es/def/fotovoltaica#PhotovoltaicSystem> ;
     sh:description "Relationship between the photovoltaic system contract and the photovoltaic system which it applies to."@en,
         "Relación entre el contrato de la instalación fotovoltaica y la instalación fotovoltaica a la cual se aplica."@es ;
     sh:name "applies to"@en,
         "aplicadoEn"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#appliesTo> .
+    sh:path <https://edint.es/def/fotovoltaica#appliesTo> .
 
 <https://astrea.linkeddata.es/shapes#b28f1a50b3141c95955799dfa1cd4295> a sh:PropertyShape ;
     rdfs:label "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."@en,
@@ -780,7 +780,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "in service date"@en,
         "fecha puesta en servicio"@es ;
     sh:nodeKind sh:Literal ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#inServiceDate> ;
+    sh:path <https://edint.es/def/fotovoltaica#inServiceDate> ;
     sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
 
 <https://astrea.linkeddata.es/shapes#e0bbfe4e331d3e32080f2276e8d1ce34> a sh:PropertyShape ;
@@ -794,7 +794,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "contract holder"@en,
         "titular contrato"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#contractHolder> .
+    sh:path <https://edint.es/def/suministro#contractHolder> .
 
 <https://astrea.linkeddata.es/shapes#f12591ffde930ece0521c6c423264260> a sh:PropertyShape ;
     rdfs:label "Total rated capacity of solar panels, measured in kilowatts (kW) or megawatts (MW), that have been mounted and connected to generate electricity."@en,
@@ -807,7 +807,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "installed photovoltaic power"@en,
         "potencia fotovoltaica instalada"@es ;
     sh:nodeKind sh:Literal ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#installedPhotovoltaicPower> ;
+    sh:path <https://edint.es/def/fotovoltaica#installedPhotovoltaicPower> ;
     sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
 
 <https://astrea.linkeddata.es/shapes#f4b3df753bc2c96f73b6c78451bbe220> a sh:PropertyShape ;

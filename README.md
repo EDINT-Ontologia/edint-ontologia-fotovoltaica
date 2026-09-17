@@ -1,5 +1,9 @@
 # Ontología de Instalación Fotovoltaica (Ontology of Photovoltaic System)
 
+[![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/fotovoltaica)
+![Prefijo](https://img.shields.io/badge/prefijo-edintfotov-informational)
+[![Licencia](https://img.shields.io/badge/licencia-CC%20BY--SA%204.0-lightgrey)](LICENSE)
+
 La ontología de instalaciones fotovoltaicas describe todos los conceptos relacionados con las instalaciones de este tipo que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red.
 
 

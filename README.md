@@ -12,7 +12,8 @@ La ontología de instalaciones fotovoltaicas describe todos los conceptos relaci
 El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de los conceptos relacionados con las instalaciones fotovoltaicas que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red realizada por estas instalaciones.
 
 # Prefijo y espacio de nombres (Prefix and namespace)
-El prefijo de la ontología de Instalación fotovoltaica es: edintfotov y es publicada en el espacio de nombres: [https://edint.es/def/fotovoltaica#](https://edint.es/def/fotovoltaica#) 
+
+El prefijo de esta ontología es `edintfotov` y se publica bajo el espacio de nombres https://edint.es/def/fotovoltaica#
 
 # Modelo conceptual (Ontology conceptualization)
 ![Modelo conceptual](diagrams/diagrama-conceptual.png)

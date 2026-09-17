@@ -1,0 +1,131 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix edintinf: <https://edint.es/def/infraestructura#> .
+@prefix edintphotovstatus: <https://edint.es/kos/PhotovoltaicSystemStatus/> .
+@prefix edintphotovusage: <https://edint.es/kos/PhotovoltaicSystemUsageType/> .
+@prefix edintfotov: <https://edint.es/def/fotovoltaica#> .
+@prefix esdir: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Generación de electricidad a través de la instalación fotovoltaica
+<https://example.org/recurso/generacionFotovoltaica/853_2026_03_GLORIAFUERTES>
+  a edintfotov:PhotovoltaicGeneration;
+  dct:identifier "853_2026_03_GLORIAFUERTES";
+  rdfs:label "Generación de 300 KwH en 3/2026", "Lectura del sensor GLORIAFUERTES correspondiente a 3/2026";
+  sosa:hasFeatureOfInterest <https://example.org/recurso/instalacionFotovoltaica/ES2026111222XX>;
+  sosa:hasResult <https://example.org/recurso/valorGenerado/853_2026_03_GLORIAFUERTES>;
+  sosa:madeBySensor <https://example.org/recurso/medidorInstalacionFotovoltaica/GLORIAFUERTES_General>;
+  sosa:phenomenonTime <https://example.org/recurso/intervaloMedicion/853_2026_03_GLORIAFUERTES> .
+
+# Contrato de la instalación fotovoltaica
+<https://example.org/recurso/contratoFotovoltaico/853> a edintfotov:PhotovoltaicSystemContract;
+  dct:identifier "Contrato-ES2002783120652701XX";
+  edintfotov:appliesTo <https://example.org/recurso/instalacionFotovoltaica/ES2026111222XX>;
+  edintfotov:contractHolder <https://example.org/recurso/organizacion/JMDBarajas>;
+  edintfotov:hasRate <https://example.org/recurso/tarifaInstalacionFotovoltaica/tarifa_fotov_general>;
+  rdfs:label "Contrato de instalación fotovoltaica en CALLE LOGROÑO, 181, 28042 MADRID",
+    "Contrato de instalación fotovoltaicaq para: CC Y BIBLIOTECA GLORIA FUERTES" .
+
+# Dirección postal
+<https://example.org/recurso/direccion-postal/28042> a esdir:DireccionPostal;
+  rdfs:label "AV/ LOGROÑO 181, 28042 MADRID" .
+
+# Definición de la Geometría
+<https://example.org/recurso/equipamiento-municipal/locations/404606.22-3593687.76>
+  a geosparql:Geometry;
+  geosparql:asWKT "POINT (-3.5936877657335900 40.460622835379600)"^^geosparql:wktLiteral .
+
+# Elemento de la infraestructura municipal: CC Y BIBLIOTECA GLORIA FUERTES
+<https://example.org/recurso/equipamientoMunicipal/853> a
+    edintinf:InfrastructureElement;
+  dct:identifier "853";
+  edintinf:belongsTo <https://example.org/recurso/sector-publico/territorio/barrio/127>;
+  edintfotov:hasPhotovoltaicSystem <https://example.org/recurso/instalacionFotovoltaica/ES2026111222XX>;
+  geosparql:hasGeometry <https://example.org/recurso/equipamiento-municipal/locations/404606.22-3593687.76>;
+  rdfs:label "CC Y BIBLIOTECA GLORIA FUERTES";
+  schema:address <https://example.org/recurso/direccion-postal/28042> .
+
+# Instante de tiempo de comienzo del intervalo
+<https://example.org/recurso/instante/853_2026_03_GLORIAFUERTES/2026-03-01T00%3A00%3A00Z>
+  a time:Instant;
+  rdfs:label "Instante de tiempo: 2026-03-01T00:00:00Z";
+  time:inXSDDateTimeStamp "2026-03-01T00:00:00Z"^^xsd:dateTimeStamp .
+
+# Instante de tiempo de final del intervalo
+<https://example.org/recurso/instante/853_2026_03_GLORIAFUERTES/2026-03-31T23%3A59%3A59Z>
+  a time:Instant;
+  rdfs:label "Instante de tiempo: 2026-03-31T23:59:59Z";
+  time:inXSDDateTimeStamp "2026-03-31T23:59:59Z"^^xsd:dateTimeStamp .
+
+# Intervalo de tiempo
+<https://example.org/recurso/intervaloMedicion/853_2026_03_GLORIAFUERTES>
+  a time:Interval;
+  rdfs:label "Período de medición correspondiente a 3/2026";
+  time:hasBeginning <https://example.org/recurso/instante/853_2026_03_GLORIAFUERTES/2026-03-01T00%3A00%3A00Z>;
+  time:hasEnd <https://example.org/recurso/instante/853_2026_03_GLORIAFUERTES/2026-03-31T23%3A59%3A59Z> .
+
+# Medidor de la generación de electricidad de la instalación fotovoltaica
+<https://example.org/recurso/medidorInstalacionFotovoltaica/GLORIAFUERTES_General>
+  a edintfotov:PhotovoltaicMeter;
+  dct:identifier "GLORIAFUERTES_General";
+  rdfs:label "Medidor fotovoltaico: GLORIAFUERTES_General, Sensor/Medidor de tipo: external";
+  schema:manufacturer <https://example.org/recurso/organizacion/Siemens> .
+
+# Organización que gestiona el elemento de la infraesturctura
+<https://example.org/recurso/organizacion/JMDBarajas>
+  a schema:Organization;
+  dct:identifier "JMDBarajas";
+  rdf:label "Junta Municipal del Distrito de Barajas";
+  schema:legalName "Junta Municipal del Distrito de Barajas" .
+
+# Organización que realizó la instalación fotovoltaica
+<https://example.org/recurso/organizacion/dragados> a schema:Organization;
+  dct:identifier "DRAGADOS";
+  rdfs:label "Dragados Offshore" .
+
+# Organización fabricante del medidor
+  <https://example.org/recurso/organizacion/Siemens> a schema:Organization;
+  dct:identifier "Siemens";
+  rdfs:label "Siemens" .
+
+# Instalación fotovoltaica
+<https://example.org/recurso/instalacionFotovoltaica/ES2026111222XX>
+  a edintfotov:PhotovoltaicSystem;
+  dct:identifier "ES2026111222XX";
+  edintfotov:hasStatus edintphotovstatus:operative;
+  edintfotov:hasUsageType edintphotovusage:grid;
+  edintfotov:installationOrganization <https://example.org/recurso/organizacion/dragados> ;
+  edintfotov:inServiceDate "2025-02-01"^^xsd:date;
+  edintfotov:installedPhotovoltaicPower "8,2"^^xsd:float;
+  rdfs:label "Instalación fotovoltaica ES2026111222XX, on-grid, conectada a la red" .
+
+# Barrio en donde se encuentra el elemento de la infraestructura
+<https://example.org/recurso/sector-publico/territorio/barrio/120>
+  a esadm:Barrio;
+  dct:identifier "120";
+  rdfs:label "ALAMEDA DE OSUNA" .
+
+# Tarifa de generación de electricidad para el contrato
+<https://example.org/recurso/tarifaInstalacionFotovoltaica/tarifa_fotov_general>
+  a edintfotov:PhtovoltaicSystemRate;
+  dct:identifier "tarifa_fotov_general";
+  rdfs:label "Tarifa aplicada para la generación de electricidad",
+    "Tarifa de tipo: tarifa_fotov_general" .
+
+# Unidad de medida
+<https://example.org/recurso/unidad/kWh> a qudt:Unit;
+  rdfs:label "kWh" .
+
+# Resultado de la medición de generación de electricidad durante un mes
+<https://example.org/recurso/valorGenerado/853_2026_03_GLORIAFUERTES>
+  a qudt:QuantityValue;
+  qudt:hasUnit <https://example.org/recurso/unidad/kWh>;
+  qudt:value "300"^^xsd:float;
+  rdfs:label "Cantidad generada: 300 kWh" .

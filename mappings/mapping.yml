@@ -1,0 +1,223 @@
+prefixes:
+  dct: "http://purl.org/dc/terms/"
+  edintinf: "https://edint.es/def/infraestructura#"
+  edintphotovstatus: "https://edint.es/kos/PhotovoltaicSystemStatus/"
+  edintphotovusage: "https://edint.es/kos/PhotovoltaicSystemUsageType/"
+  edintfotov: "https://edint.es/def/fotovoltaica#"
+  esdir: "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#"
+  esadm: "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
+  geosparql: "http://www.opengis.net/ont/geosparql#"
+  qudt: "http://qudt.org/schema/qudt/"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  schema: "https://schema.org/"
+  sosa: "http://www.w3.org/ns/sosa/"
+  time: "http://www.w3.org/2006/time#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
+
+sources:
+  data-source: ['fotovoltaica.csv~csv']
+
+mappings:
+
+
+  photovoltaic-generation:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/generacionFotovoltaica/$(generation_id)"
+    po:
+      - [a, edintfotov:PhotovoltaicGeneration]
+      - [dct:identifier, $(generation_id)]
+      - [rdfs:label, "Generación de $(generation_value) KwH en $(month)/$(year)"]
+      - [rdfs:label, "Lectura del sensor $(sensor_name) correspondiente a $(month)/$(year)"]
+      - [sosa:hasFeatureOfInterest, "https://example.org/recurso/instalacionFotovoltaica/$(system_id)~iri"]
+      - [sosa:hasResult, "https://example.org/recurso/valorGenerado/$(generation_id)~iri"]
+      - [sosa:madeBySensor, "https://example.org/recurso/medidorInstalacionFotovoltaica/$(meter_id)~iri"]
+      - [sosa:phenomenonTime, "https://example.org/recurso/intervaloMedicion/$(generation_id)~iri"]
+
+
+
+  photovoltaic-contract:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/contratoFotovoltaico/$(contract_resource_id)"
+    po:
+      - [a, edintfotov:PhotovoltaicSystemContract]
+      - [dct:identifier, $(contract_identifier)]
+      - [edintfotov:appliesTo, "https://example.org/recurso/instalacionFotovoltaica/$(system_id)~iri"]
+      - [edintfotov:contractHolder, "https://example.org/recurso/organizacion/$(manager_id)~iri"]
+      - [edintfotov:hasRate, "https://example.org/recurso/tarifaInstalacionFotovoltaica/$(rate_id)~iri"]
+      - [rdfs:label, "Contrato de instalación fotovoltaica en $(contract_address_text)"]
+      - [rdfs:label, "Contrato de instalación fotovoltaica para: $(equipment_name)"]
+
+
+
+  postal-address:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/direccion-postal/$(address_id)"
+    po:
+      - [a, esdir:DireccionPostal]
+      - [rdfs:label, $(address_label)]
+
+
+
+
+  geometry:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/equipamiento-municipal/locations/$(geometry_id)"
+    po:
+      - [a, geosparql:Geometry]
+      - [geosparql:asWKT, "$(wkt)~geosparql:wktLiteral"]
+
+
+
+  infrastructure-element:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/equipamientoMunicipal/$(equipment_id)"
+    po:
+      - [a, edintinf:InfrastructureElement]
+      - [dct:identifier, $(equipment_id)]
+      - [edintinf:belongsTo, "https://example.org/recurso/sector-publico/territorio/barrio/$(barrio_id)~iri"]
+      - [edintfotov:hasPhotovoltaicSystem, "https://example.org/recurso/instalacionFotovoltaica/$(system_id)~iri"]
+      - [geosparql:hasGeometry, "https://example.org/recurso/equipamiento-municipal/locations/$(geometry_id)~iri"]
+      - [rdfs:label, $(equipment_name)]
+      - [schema:address, "https://example.org/recurso/direccion-postal/$(address_id)~iri"]
+
+
+
+  measurement-start-instant:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/instante/$(generation_id)/$(start_datetime)"
+    po:
+      - [a, time:Instant]
+      - [rdfs:label, "Instante de tiempo: $(start_datetime)"]
+      - [time:inXSDDateTimeStamp, "$(start_datetime)~xsd:dateTimeStamp"]
+
+
+
+  measurement-end-instant:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/instante/$(generation_id)/$(end_datetime)"
+    po:
+      - [a, time:Instant]
+      - [rdfs:label, "Instante de tiempo: $(end_datetime)"]
+      - [time:inXSDDateTimeStamp, "$(end_datetime)~xsd:dateTimeStamp"]
+
+
+
+  measurement-interval:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/intervaloMedicion/$(generation_id)"
+    po:
+      - [a, time:Interval]
+      - [rdfs:label, "Período de medición correspondiente a $(month)/$(year)"]
+      - [time:hasBeginning, "https://example.org/recurso/instante/$(generation_id)/$(start_datetime)~iri"]
+      - [time:hasEnd, "https://example.org/recurso/instante/$(generation_id)/$(end_datetime)~iri"]
+
+
+
+  photovoltaic-meter:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/medidorInstalacionFotovoltaica/$(meter_id)"
+    po:
+      - [a, edintfotov:PhotovoltaicMeter]
+      - [dct:identifier, $(meter_id)]
+      - [rdfs:label, "Medidor fotovoltaico: $(meter_id), Sensor/Medidor de tipo: $(meter_type)"]
+      - [schema:manufacturer, "https://example.org/recurso/organizacion/$(manufacturer_id)~iri"]
+
+
+
+  managing-organization:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/organizacion/$(manager_id)"
+    po:
+      - [a, schema:Organization]
+      - [dct:identifier, $(manager_identifier)]
+      - [rdfs:label, $(manager_name)]
+      - [schema:legalName, $(manager_name)]
+
+
+
+  installation-organization:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/organizacion/$(installer_id)"
+    po:
+      - [a, schema:Organization]
+      - [dct:identifier, $(installer_identifier)]
+      - [rdfs:label, $(installer_name)]
+
+
+
+  manufacturer-organization:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/organizacion/$(manufacturer_id)"
+    po:
+      - [a, schema:Organization]
+      - [dct:identifier, $(manufacturer_identifier)]
+      - [rdfs:label, $(manufacturer_name)]
+
+
+  photovoltaic-system:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/instalacionFotovoltaica/$(system_id)"
+    po:
+      - [a, edintfotov:PhotovoltaicSystem]
+      - [dct:identifier, $(system_id)]
+      - [edintfotov:hasStatus, "https://edint.es/kos/PhotovoltaicSystemStatus/$(system_status)~iri"]
+      - [edintfotov:hasUsageType, "https://edint.es/kos/PhotovoltaicSystemUsageType/$(system_usage_type)~iri"]
+      - [edintfotov:installationOrganization, "https://example.org/recurso/organizacion/$(installer_id)~iri"]
+      - [edintfotov:inServiceDate, "$(in_service_date)~xsd:date"]
+      - [edintfotov:installedPhotovoltaicPower, "$(installed_power)~xsd:float"]
+      - [rdfs:label, $(system_label)]
+
+
+  # ============================================================
+  # BARRIO
+  # ============================================================
+
+  neighbourhood:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/sector-publico/territorio/barrio/$(barrio_id)"
+    po:
+      - [a, esadm:Barrio]
+      - [dct:identifier, $(barrio_id)]
+      - [rdfs:label, $(barrio_name)]
+
+
+  # ============================================================
+  # TARIFA
+  # ============================================================
+
+  photovoltaic-rate:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/tarifaInstalacionFotovoltaica/$(rate_id)"
+    po:
+      - [a, edintfotov:PhtovoltaicSystemRate]
+      - [dct:identifier, $(rate_id)]
+      - [rdfs:label, "Tarifa aplicada para la generación de electricidad"]
+      - [rdfs:label, "Tarifa de tipo: $(rate_id)"]
+
+
+  # ============================================================
+  # UNIDAD DE MEDIDA
+  # ============================================================
+
+  measurement-unit:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/unidad/$(unit_id)"
+    po:
+      - [a, qudt:Unit]
+      - [rdfs:label, $(unit_label)]
+
+
+  # ============================================================
+  # RESULTADO DE LA MEDICIÓN
+  # ============================================================
+
+  photovoltaic-generation-result:
+    sources: photovoltaic-source
+    s: "https://example.org/recurso/valorGenerado/$(generation_id)"
+    po:
+      - [a, qudt:QuantityValue]
+      - [qudt:hasUnit, "https://example.org/recurso/unidad/$(unit_id)~iri"]
+      - [qudt:value, "$(generation_value)~xsd:float"]
+      - [rdfs:label, "Cantidad generada: $(generation_value) $(unit_label)"]

@@ -21,7 +21,6 @@
      xmlns:edintkos="https://edint.es/kos/"
      xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/">    <owl:Ontology rdf:about="https://edint.es/def/fotovoltaica">
         <owl:versionIRI rdf:resource="https://edint.es/def/fotovoltaica/0.2.1"/>
-        <dcterms:created>2026-03-26</dcterms:created>
         <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Daniel Doña</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
@@ -44,7 +43,6 @@
         </dcterms:creator>
         <dcterms:description xml:lang="es">La ontología de instalaciones fotovoltaicas describe todos los conceptos relacionados con las instalaciones de este tipo que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red.</dcterms:description>
         <dcterms:description xml:lang="en">The ontology of photovoltaic systems describes all the concepts related to installations of this type that are found in the elements of the infrastructure of a municipality and the measurement of the generation, consumption, accumulation and exported electricity into the grid.</dcterms:description>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-26</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología EDINT de Instalación Fotovoltaica</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Photovoltaic System Ontology</dcterms:title>
@@ -52,6 +50,9 @@
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/fotovoltaica#"/>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-fotovoltaica/releases/tag/v0.2.0"/>
         <owl:versionInfo>0.2.1</owl:versionInfo>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-26</dcterms:created>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
         <dcterms:publisher rdf:parseType="Resource">
             <foaf:name>FEMP</foaf:name>
             <foaf:homepage rdf:resource="https://www.femp.es/"/>

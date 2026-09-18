@@ -1,4 +1,4 @@
-# Ontología de Instalación Fotovoltaica (Ontology of Photovoltaic System)
+# Ontología EDINT de Instalación Fotovoltaica
 
 [![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/fotovoltaica)
 ![Prefijo](https://img.shields.io/badge/prefijo-edintfotov-informational)

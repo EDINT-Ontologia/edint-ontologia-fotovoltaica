@@ -47,6 +47,8 @@
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología EDINT de Instalación Fotovoltaica</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Photovoltaic System Ontology</dcterms:title>
+        <rdfs:label xml:lang="es">Instalaciones Fotovoltaicas</rdfs:label>
+        <rdfs:label xml:lang="en">Photovoltaic Systems</rdfs:label>
         <vann:preferredNamespacePrefix>edintfotov</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/fotovoltaica#"/>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-fotovoltaica/releases/tag/v0.2.0"/>

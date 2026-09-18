@@ -1,5 +1,121 @@
 [ {
   "@id" : "_:genid1",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Socorro Bernardos"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "OGC Simple Features"
+  }, {
+    "@language" : "en",
+    "@value" : "OGC Simple Features"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/sf"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Parking (edintapar)"
+  }, {
+    "@language" : "es",
+    "@value" : "Aparcamiento (edintapar)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://edint.es/def/aparcamiento"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "QUDT"
+  }, {
+    "@language" : "en",
+    "@value" : "QUDT"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://qudt.org/schema/qudt"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "GeoSPARQL"
+  }, {
+    "@language" : "en",
+    "@value" : "GeoSPARQL"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Territory (esadm)"
+  }, {
+    "@language" : "es",
+    "@value" : "Territorio (esadm)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tráfico (Ciudades Abiertas)"
+  }, {
+    "@language" : "en",
+    "@value" : "Traffic (Ciudades Abiertas)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Public Bicycles (Ciudades Abiertas)"
+  }, {
+    "@language" : "es",
+    "@value" : "Bicicleta Pública (Ciudades Abiertas)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infrastructure (edintinf)"
+  }, {
+    "@language" : "es",
+    "@value" : "Infraestructura (edintinf)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://edint.es/def/infraestructura"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "SAREF"
+  }, {
+    "@language" : "en",
+    "@value" : "SAREF"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://saref.etsi.org/core"
+  } ]
+}, {
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "https://edint.es/kos/PhotovoltaicSystemStatus"
@@ -9,6 +125,14 @@
   } ]
 }, {
   "@id" : "_:genid2",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Oscar Corcho"
+  } ]
+}, {
+  "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "https://edint.es/kos/PhotovoltaicSystemUsageType"
@@ -17,7 +141,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -27,7 +151,7 @@
     "@id" : "http://qudt.org/schema/qudt/hasUnit"
   } ]
 }, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -37,7 +161,84 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid3",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lucía Sánchez"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Edna Ruckhaus"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Daniel Doña"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "http://schema.org/affiliation" : [ {
+    "@value" : "Federación Española de Municipios y Provincias"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://www.femp.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "FEMP"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "geo_core (IGN)"
+  }, {
+    "@language" : "en",
+    "@value" : "geo_core (IGN)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://datos.ign.es/def/geo_core"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "SOSA/SSN"
+  }, {
+    "@language" : "en",
+    "@value" : "SOSA/SSN"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/ns/sosa"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "OWL-Time"
+  }, {
+    "@language" : "en",
+    "@value" : "OWL-Time"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.w3.org/2006/time"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/contributor",
@@ -81,6 +282,12 @@
   "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -119,7 +326,7 @@
   }, {
     "@id" : "http://qudt.org/schema/qudt/Quantifiable"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "_:genid21"
   } ]
 }, {
   "@id" : "http://qudt.org/schema/qudt/Unit",
@@ -196,7 +403,19 @@
     "@value" : "value"
   } ]
 }, {
+  "@id" : "http://schema.org/affiliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/creativeWorkStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://schema.org/domainIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/funding",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://schema.org/manufacturer",
@@ -538,7 +757,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid4"
+    "@id" : "_:genid22"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -1079,6 +1298,12 @@
     "@id" : "http://www.w3.org/ns/sosa/"
   } ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://datos.ign.es/def/geo_core#xETRS89",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/source" : [ {
@@ -1153,19 +1378,34 @@
 }, {
   "@id" : "https://edint.es/def/fotovoltaica",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "es",
+    "@value" : "El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de los conceptos relacionados con las instalaciones fotovoltaicas que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red realizada por estas instalaciones."
+  }, {
+    "@language" : "en",
+    "@value" : "The purpose of this ontology is to provide a common vocabulary for the representation of concepts related to photovoltaic systems found in the infrastructure elements of a municipality and the measurement of the generation, consumption, storage and export of electricity into the grid by these installations."
+  } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@language" : "en",
+    "@value" : "EDINT Photovoltaic System Ontology. EDINT. Revision: v0.2.1."
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología EDINT de Instalación Fotovoltaica. EDINT. Revisión: v0.2.1."
+  } ],
   "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2026-03-26"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Daniel Doña"
+    "@id" : "_:genid1"
   }, {
-    "@value" : "Edna Ruckhaus"
+    "@id" : "_:genid2"
   }, {
-    "@value" : "Lucía Sánchez"
+    "@id" : "_:genid3"
   }, {
-    "@value" : "Oscar Corcho"
+    "@id" : "_:genid4"
   }, {
-    "@value" : "Socorro Bernardos"
+    "@id" : "_:genid5"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "es",
@@ -1176,17 +1416,24 @@
   } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-03-26"
+    "@value" : "2026-09-17"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-09-17"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "_:genid6"
+  } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@language" : "es",
-    "@value" : "Ontología de Instalación Fotovoltaica"
-  }, {
     "@language" : "en",
-    "@value" : "The Photovoltaic System Ontology"
+    "@value" : "EDINT Photovoltaic System Ontology"
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología EDINT de Instalación Fotovoltaica"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "edintfotov"
@@ -1194,14 +1441,68 @@
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@id" : "https://edint.es/def/fotovoltaica#"
   } ],
+  "http://schema.org/codeRepository" : [ {
+    "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-fotovoltaica"
+  } ],
+  "http://schema.org/creativeWorkStatus" : [ {
+    "@language" : "en",
+    "@value" : "Ontology Specification"
+  } ],
+  "http://schema.org/funding" : [ {
+    "@value" : "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Instalaciones Fotovoltaicas"
+  }, {
+    "@language" : "en",
+    "@value" : "Photovoltaic Systems"
+  } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-fotovoltaica/releases/tag/v0.2.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://edint.es/def/fotovoltaica"
+    "@id" : "https://edint.es/def/fotovoltaica/0.2.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.2.1"
+  } ],
+  "https://w3id.org/widoco/vocab#jsonldSerialization" : [ {
+    "@value" : "ontology.jsonld"
+  } ],
+  "https://w3id.org/widoco/vocab#ntSerialization" : [ {
+    "@value" : "ontology.nt"
+  } ],
+  "https://w3id.org/widoco/vocab#rdfxmlSerialization" : [ {
+    "@value" : "ontology.rdf"
+  } ],
+  "https://w3id.org/widoco/vocab#turtleSerialization" : [ {
+    "@value" : "ontology.ttl"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyLabel" : [ {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
   } ]
 }, {
   "@id" : "https://edint.es/def/fotovoltaica#PhotovoltaicGeneration",
@@ -1466,7 +1767,7 @@
     "@value" : "tiene estado"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid19"
   } ]
 }, {
   "@id" : "https://edint.es/def/fotovoltaica#hasUsageType",
@@ -1489,7 +1790,7 @@
     "@value" : "tiene tipo uso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid2"
+    "@id" : "_:genid20"
   } ]
 }, {
   "@id" : "https://edint.es/def/fotovoltaica#inServiceDate",
@@ -1632,6 +1933,11 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
   } ]
 }, {
+  "@id" : "https://oeg.fi.upm.es/",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Ontology Engineering Group, UPM"
+  } ]
+}, {
   "@id" : "https://saref.etsi.org/core/Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -1674,5 +1980,23 @@
   } ]
 }, {
   "@id" : "https://w3id.org/mod#createdWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#jsonldSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#ntSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#rdfxmlSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#turtleSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#vocabularyIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#vocabularyLabel",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]

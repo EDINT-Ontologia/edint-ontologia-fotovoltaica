@@ -1,4 +1,4 @@
-# Ontología EDINT de Instalación Fotovoltaica
+# Ontología de Instalación Fotovoltaica (Ontology of Photovoltaic System)
 
 La ontología de instalaciones fotovoltaicas describe todos los conceptos relacionados con las instalaciones de este tipo que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red.
 

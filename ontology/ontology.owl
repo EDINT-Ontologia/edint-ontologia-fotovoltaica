@@ -68,7 +68,95 @@
     <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
     <dcterms:abstract xml:lang="es">El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de los conceptos relacionados con las instalaciones fotovoltaicas que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red realizada por estas instalaciones.</dcterms:abstract>
     <dcterms:abstract xml:lang="en">The purpose of this ontology is to provide a common vocabulary for the representation of concepts related to photovoltaic systems found in the infrastructure elements of a municipality and the measurement of the generation, consumption, storage and export of electricity into the grid by these installations.</dcterms:abstract>
-</owl:Ontology>
+        <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
+        <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
+        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
+        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
+            <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
+                <rdfs:label xml:lang="es">QUDT</rdfs:label>
+                <rdfs:label xml:lang="en">QUDT</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica"/>
+                <rdfs:label xml:lang="es">Bicicleta Pública (Ciudades Abiertas)</rdfs:label>
+                <rdfs:label xml:lang="en">Public Bicycles (Ciudades Abiertas)</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
+                <rdfs:label xml:lang="es">Tráfico (Ciudades Abiertas)</rdfs:label>
+                <rdfs:label xml:lang="en">Traffic (Ciudades Abiertas)</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+                <rdfs:label xml:lang="es">Territorio (esadm)</rdfs:label>
+                <rdfs:label xml:lang="en">Territory (esadm)</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
+                <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+                <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
+                <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
+                <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
+                <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
+                <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
+                <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
+                <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
+                <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
+                <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/aparcamiento"/>
+                <rdfs:label xml:lang="es">Aparcamiento (edintapar)</rdfs:label>
+                <rdfs:label xml:lang="en">Parking (edintapar)</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
+                <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
+                <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+        <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="https://saref.etsi.org/core"/>
+                <rdfs:label xml:lang="es">SAREF</rdfs:label>
+                <rdfs:label xml:lang="en">SAREF</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+    </owl:Ontology>
     <foaf:Organization rdf:about="https://oeg.fi.upm.es/">
         <foaf:name>Ontology Engineering Group, UPM</foaf:name>
     </foaf:Organization>
@@ -1285,96 +1373,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     <!-- Nombres de fichero de las serializaciones generadas (vocabulario Widoco) -->
-    <owl:Ontology rdf:about="https://edint.es/def/fotovoltaica">
-        <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
-        <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
-        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
-        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
-            <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
-                <rdfs:label xml:lang="es">QUDT</rdfs:label>
-                <rdfs:label xml:lang="en">QUDT</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica"/>
-                <rdfs:label xml:lang="es">Bicicleta Pública (Ciudades Abiertas)</rdfs:label>
-                <rdfs:label xml:lang="en">Public Bicycles (Ciudades Abiertas)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
-                <rdfs:label xml:lang="es">Tráfico (Ciudades Abiertas)</rdfs:label>
-                <rdfs:label xml:lang="en">Traffic (Ciudades Abiertas)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
-                <rdfs:label xml:lang="es">Territorio (esadm)</rdfs:label>
-                <rdfs:label xml:lang="en">Territory (esadm)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
-                <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
-                <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
-                <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
-                <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
-                <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
-                <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
-                <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
-                <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
-                <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
-                <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/aparcamiento"/>
-                <rdfs:label xml:lang="es">Aparcamiento (edintapar)</rdfs:label>
-                <rdfs:label xml:lang="en">Parking (edintapar)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
-                <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
-                <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-        <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="https://saref.etsi.org/core"/>
-                <rdfs:label xml:lang="es">SAREF</rdfs:label>
-                <rdfs:label xml:lang="en">SAREF</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-</owl:Ontology>
+    
 </rdf:RDF>
 
 

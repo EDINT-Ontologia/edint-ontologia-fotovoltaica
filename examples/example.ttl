@@ -103,7 +103,7 @@
   edintfotov:hasUsageType edintphotovusage:grid;
   edintfotov:installationOrganization <https://example.org/recurso/organizacion/dragados> ;
   edintfotov:inServiceDate "2025-02-01"^^xsd:date;
-  edintfotov:installedPhotovoltaicPower "8,2"^^xsd:float;
+  edintfotov:installedPhotovoltaicPower "8.2"^^xsd:float;
   rdfs:label "Instalación fotovoltaica ES2026111222XX, on-grid, conectada a la red" .
 
 # Barrio en donde se encuentra el elemento de la infraestructura
@@ -114,7 +114,7 @@
 
 # Tarifa de generación de electricidad para el contrato
 <https://example.org/recurso/tarifaInstalacionFotovoltaica/tarifa_fotov_general>
-  a edintfotov:PhtovoltaicSystemRate;
+  a edintfotov:PhotovoltaicSystemRate;
   dct:identifier "tarifa_fotov_general";
   rdfs:label "Tarifa aplicada para la generación de electricidad",
     "Tarifa de tipo: tarifa_fotov_general" .
@@ -127,5 +127,5 @@
 <https://example.org/recurso/valorGenerado/853_2026_03_GLORIAFUERTES>
   a qudt:QuantityValue;
   qudt:hasUnit <https://example.org/recurso/unidad/kWh>;
-  qudt:value "300"^^xsd:float;
+  qudt:numericValue "300"^^xsd:float;
   rdfs:label "Cantidad generada: 300 kWh" .

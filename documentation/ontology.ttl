@@ -21,7 +21,7 @@
                                      <http://purl.org/dc/terms/description> "La ontología de instalaciones fotovoltaicas describe todos los conceptos relacionados con las instalaciones de este tipo que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red."@es ,
                                                                             "The ontology of photovoltaic systems describes all the concepts related to installations of this type that are found in the elements of the infrastructure of a municipality and the measurement of the generation, consumption, accumulation and exported electricity into the grid."@en ;
                                      <http://purl.org/dc/terms/issued> "2026-09-17"^^xsd:date ;
-                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> ;
                                      <http://purl.org/dc/terms/modified> "2026-09-17"^^xsd:date ;
                                      <http://purl.org/dc/terms/publisher> _:genid6 ;
                                      <http://purl.org/dc/terms/title> "EDINT Photovoltaic System Ontology"@en ,

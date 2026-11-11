@@ -23,7 +23,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
 <https://edint.es/def/fotovoltaica> <http://purl.org/dc/terms/description> "La ontología de instalaciones fotovoltaicas describe todos los conceptos relacionados con las instalaciones de este tipo que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red."@es .
 <https://edint.es/def/fotovoltaica> <http://purl.org/dc/terms/description> "The ontology of photovoltaic systems describes all the concepts related to installations of this type that are found in the elements of the infrastructure of a municipality and the measurement of the generation, consumption, accumulation and exported electricity into the grid."@en .
 <https://edint.es/def/fotovoltaica> <http://purl.org/dc/terms/issued> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/fotovoltaica> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://edint.es/def/fotovoltaica> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> .
 <https://edint.es/def/fotovoltaica> <http://purl.org/dc/terms/modified> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://edint.es/def/fotovoltaica> <http://purl.org/dc/terms/publisher> _:genid6 .
 _:genid6 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
@@ -32,7 +32,7 @@ _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/fotovoltaica> <http://purl.org/dc/terms/title> "EDINT Photovoltaic System Ontology"@en .
 <https://edint.es/def/fotovoltaica> <http://purl.org/dc/terms/title> "Ontología EDINT de Instalación Fotovoltaica"@es .
 <https://edint.es/def/fotovoltaica> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintfotov" .
-<https://edint.es/def/fotovoltaica> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/fotovoltaica#> .
+<https://edint.es/def/fotovoltaica> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/fotovoltaica#" .
 <https://edint.es/def/fotovoltaica> <http://www.w3.org/2000/01/rdf-schema#label> "Instalaciones Fotovoltaicas"@es .
 <https://edint.es/def/fotovoltaica> <http://www.w3.org/2000/01/rdf-schema#label> "Photovoltaic Systems"@en .
 <https://edint.es/def/fotovoltaica> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-fotovoltaica/releases/tag/v0.2.0> .
@@ -45,53 +45,53 @@ _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
-_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
-_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@es .
-_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@en .
+_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/core> .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF"@es .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF"@en .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
-_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
+_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@es .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@en .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid9 .
-_:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
-_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@es .
-_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@en .
+_:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/infraestructura> .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Infrastructure (edintinf)"@en .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructura (edintinf)"@es .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid10 .
-_:genid10 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
+_:genid10 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/aparcamiento> .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Parking (edintapar)"@en .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "Aparcamiento (edintapar)"@es .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid11 .
-_:genid11 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/aparcamiento> .
-_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "Parking (edintapar)"@en .
-_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "Aparcamiento (edintapar)"@es .
+_:genid11 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@es .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@en .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid12 .
-_:genid12 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
-_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
-_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
+_:genid12 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid13 .
-_:genid13 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
-_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
-_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
+_:genid13 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "Territory (esadm)"@en .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "Territorio (esadm)"@es .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid14 .
-_:genid14 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
-_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "Territory (esadm)"@en .
-_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "Territorio (esadm)"@es .
+_:genid14 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
+_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "Tráfico (Ciudades Abiertas)"@es .
+_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "Traffic (Ciudades Abiertas)"@en .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid15 .
-_:genid15 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
-_:genid15 <http://www.w3.org/2000/01/rdf-schema#label> "Tráfico (Ciudades Abiertas)"@es .
-_:genid15 <http://www.w3.org/2000/01/rdf-schema#label> "Traffic (Ciudades Abiertas)"@en .
+_:genid15 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica> .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#label> "Public Bicycles (Ciudades Abiertas)"@en .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#label> "Bicicleta Pública (Ciudades Abiertas)"@es .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid16 .
-_:genid16 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica> .
-_:genid16 <http://www.w3.org/2000/01/rdf-schema#label> "Public Bicycles (Ciudades Abiertas)"@en .
-_:genid16 <http://www.w3.org/2000/01/rdf-schema#label> "Bicicleta Pública (Ciudades Abiertas)"@es .
+_:genid16 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+_:genid16 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
+_:genid16 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid17 .
-_:genid17 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/infraestructura> .
-_:genid17 <http://www.w3.org/2000/01/rdf-schema#label> "Infrastructure (edintinf)"@en .
-_:genid17 <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructura (edintinf)"@es .
+_:genid17 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+_:genid17 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
+_:genid17 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
 <https://edint.es/def/fotovoltaica> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid18 .
-_:genid18 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/core> .
-_:genid18 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF"@es .
-_:genid18 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF"@en .
+_:genid18 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+_:genid18 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
+_:genid18 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
 # 
 # 
 # #################################################################

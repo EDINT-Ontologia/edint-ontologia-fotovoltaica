@@ -27,7 +27,7 @@
                                      <http://purl.org/dc/terms/title> "EDINT Photovoltaic System Ontology"@en ,
                                                                       "Ontología EDINT de Instalación Fotovoltaica"@es ;
                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintfotov" ;
-                                     <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/fotovoltaica#" ;
                                      rdfs:label "Instalaciones Fotovoltaicas"@es ,
                                                 "Photovoltaic Systems"@en ;
                                      owl:priorVersion <https://github.com/EDINT-Ontologia/edint-ontologia-fotovoltaica/releases/tag/v0.2.0> ;

@@ -32,7 +32,7 @@ _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/fotovoltaica> <http://purl.org/dc/terms/title> "EDINT Photovoltaic System Ontology"@en .
 <https://edint.es/def/fotovoltaica> <http://purl.org/dc/terms/title> "Ontología EDINT de Instalación Fotovoltaica"@es .
 <https://edint.es/def/fotovoltaica> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintfotov" .
-<https://edint.es/def/fotovoltaica> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/fotovoltaica#> .
+<https://edint.es/def/fotovoltaica> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/fotovoltaica#" .
 <https://edint.es/def/fotovoltaica> <http://www.w3.org/2000/01/rdf-schema#label> "Instalaciones Fotovoltaicas"@es .
 <https://edint.es/def/fotovoltaica> <http://www.w3.org/2000/01/rdf-schema#label> "Photovoltaic Systems"@en .
 <https://edint.es/def/fotovoltaica> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-fotovoltaica/releases/tag/v0.2.0> .

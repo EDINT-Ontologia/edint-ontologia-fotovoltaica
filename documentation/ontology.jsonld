@@ -1427,7 +1427,7 @@
     "@value" : "edintfotov"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "https://edint.es/def/fotovoltaica#"
+    "@value" : "https://edint.es/def/fotovoltaica#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",

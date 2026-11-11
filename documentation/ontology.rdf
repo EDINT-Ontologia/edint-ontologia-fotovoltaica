@@ -37,7 +37,7 @@
         <terms:title xml:lang="en">EDINT Photovoltaic System Ontology</terms:title>
         <terms:title xml:lang="es">Ontología EDINT de Instalación Fotovoltaica</terms:title>
         <vann:preferredNamespacePrefix>edintfotov</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/fotovoltaica#"/>
+        <vann:preferredNamespaceUri>https://edint.es/def/fotovoltaica#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="es">Instalaciones Fotovoltaicas</rdfs:label>
         <rdfs:label xml:lang="en">Photovoltaic Systems</rdfs:label>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-fotovoltaica/releases/tag/v0.2.0"/>

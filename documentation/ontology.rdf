@@ -88,64 +88,64 @@
         <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid7">
-        <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
-        <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
+        <rdfs:label xml:lang="en">SAREF</rdfs:label>
+        <rdfs:label xml:lang="es">SAREF</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="https://saref.etsi.org/core"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid8">
-        <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
-        <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid9">
         <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
         <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid10">
-        <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
-        <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid11">
-        <rdfs:label xml:lang="es">Aparcamiento (edintapar)</rdfs:label>
-        <rdfs:label xml:lang="en">Parking (edintapar)</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="https://edint.es/def/aparcamiento"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid12">
-        <rdfs:label xml:lang="en">QUDT</rdfs:label>
-        <rdfs:label xml:lang="es">QUDT</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid13">
-        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
-        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid14">
-        <rdfs:label xml:lang="es">Territorio (esadm)</rdfs:label>
-        <rdfs:label xml:lang="en">Territory (esadm)</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid15">
-        <rdfs:label xml:lang="en">Traffic (Ciudades Abiertas)</rdfs:label>
-        <rdfs:label xml:lang="es">Tráfico (Ciudades Abiertas)</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid16">
-        <rdfs:label xml:lang="es">Bicicleta Pública (Ciudades Abiertas)</rdfs:label>
-        <rdfs:label xml:lang="en">Public Bicycles (Ciudades Abiertas)</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid17">
+    <rdf:Description rdf:nodeID="genid9">
         <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
         <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
     </rdf:Description>
+    <rdf:Description rdf:nodeID="genid10">
+        <rdfs:label xml:lang="es">Aparcamiento (edintapar)</rdfs:label>
+        <rdfs:label xml:lang="en">Parking (edintapar)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="https://edint.es/def/aparcamiento"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid11">
+        <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
+        <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid12">
+        <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
+        <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid13">
+        <rdfs:label xml:lang="es">Territorio (esadm)</rdfs:label>
+        <rdfs:label xml:lang="en">Territory (esadm)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid14">
+        <rdfs:label xml:lang="en">Traffic (Ciudades Abiertas)</rdfs:label>
+        <rdfs:label xml:lang="es">Tráfico (Ciudades Abiertas)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid15">
+        <rdfs:label xml:lang="es">Bicicleta Pública (Ciudades Abiertas)</rdfs:label>
+        <rdfs:label xml:lang="en">Public Bicycles (Ciudades Abiertas)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid16">
+        <rdfs:label xml:lang="en">QUDT</rdfs:label>
+        <rdfs:label xml:lang="es">QUDT</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid17">
+        <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
+        <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
+    </rdf:Description>
     <rdf:Description rdf:nodeID="genid18">
-        <rdfs:label xml:lang="en">SAREF</rdfs:label>
-        <rdfs:label xml:lang="es">SAREF</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="https://saref.etsi.org/core"/>
+        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
     </rdf:Description>
     
 

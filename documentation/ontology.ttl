@@ -71,53 +71,53 @@ _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
           <http://xmlns.com/foaf/0.1/name> "FEMP" ;
           <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
 
-_:genid7 rdfs:label "geo_core (IGN)"@en ,
-                     "geo_core (IGN)"@es ;
-          <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+_:genid7 rdfs:label "SAREF"@en ,
+                     "SAREF"@es ;
+          <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/core> .
 
-_:genid8 rdfs:label "SOSA/SSN"@en ,
-                     "SOSA/SSN"@es ;
-          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
-
-_:genid9 rdfs:label "OWL-Time"@en ,
+_:genid8 rdfs:label "OWL-Time"@en ,
                      "OWL-Time"@es ;
           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
 
-_:genid10 rdfs:label "OGC Simple Features"@en ,
-                      "OGC Simple Features"@es ;
-           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+_:genid9 rdfs:label "Infraestructura (edintinf)"@es ,
+                     "Infrastructure (edintinf)"@en ;
+          <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/infraestructura> .
 
-_:genid11 rdfs:label "Aparcamiento (edintapar)"@es ,
+_:genid10 rdfs:label "Aparcamiento (edintapar)"@es ,
                       "Parking (edintapar)"@en ;
            <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/aparcamiento> .
 
-_:genid12 rdfs:label "QUDT"@en ,
-                      "QUDT"@es ;
-           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+_:genid11 rdfs:label "geo_core (IGN)"@en ,
+                      "geo_core (IGN)"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
 
-_:genid13 rdfs:label "GeoSPARQL"@en ,
-                      "GeoSPARQL"@es ;
-           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+_:genid12 rdfs:label "SOSA/SSN"@en ,
+                      "SOSA/SSN"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
 
-_:genid14 rdfs:label "Territorio (esadm)"@es ,
+_:genid13 rdfs:label "Territorio (esadm)"@es ,
                       "Territory (esadm)"@en ;
            <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
 
-_:genid15 rdfs:label "Traffic (Ciudades Abiertas)"@en ,
+_:genid14 rdfs:label "Traffic (Ciudades Abiertas)"@en ,
                       "Tráfico (Ciudades Abiertas)"@es ;
            <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
 
-_:genid16 rdfs:label "Bicicleta Pública (Ciudades Abiertas)"@es ,
+_:genid15 rdfs:label "Bicicleta Pública (Ciudades Abiertas)"@es ,
                       "Public Bicycles (Ciudades Abiertas)"@en ;
            <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica> .
 
-_:genid17 rdfs:label "Infraestructura (edintinf)"@es ,
-                      "Infrastructure (edintinf)"@en ;
-           <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/infraestructura> .
+_:genid16 rdfs:label "QUDT"@en ,
+                      "QUDT"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
 
-_:genid18 rdfs:label "SAREF"@en ,
-                      "SAREF"@es ;
-           <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/core> .
+_:genid17 rdfs:label "OGC Simple Features"@en ,
+                      "OGC Simple Features"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+
+_:genid18 rdfs:label "GeoSPARQL"@en ,
+                      "GeoSPARQL"@es ;
+           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
 
 #################################################################
 #    Annotation properties

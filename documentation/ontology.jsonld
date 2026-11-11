@@ -9,18 +9,6 @@
 }, {
   "@id" : "_:genid10",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "OGC Simple Features"
-  }, {
-    "@language" : "en",
-    "@value" : "OGC Simple Features"
-  } ],
-  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://www.opengis.net/ont/sf"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Parking (edintapar)"
   }, {
@@ -31,31 +19,31 @@
     "@id" : "https://edint.es/def/aparcamiento"
   } ]
 }, {
+  "@id" : "_:genid11",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "geo_core (IGN)"
+  }, {
+    "@language" : "en",
+    "@value" : "geo_core (IGN)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://datos.ign.es/def/geo_core"
+  } ]
+}, {
   "@id" : "_:genid12",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "QUDT"
+    "@value" : "SOSA/SSN"
   }, {
     "@language" : "en",
-    "@value" : "QUDT"
+    "@value" : "SOSA/SSN"
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://qudt.org/schema/qudt"
+    "@id" : "http://www.w3.org/ns/sosa"
   } ]
 }, {
   "@id" : "_:genid13",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "GeoSPARQL"
-  }, {
-    "@language" : "en",
-    "@value" : "GeoSPARQL"
-  } ],
-  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql"
-  } ]
-}, {
-  "@id" : "_:genid14",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Territory (esadm)"
@@ -67,7 +55,7 @@
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid14",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "Tráfico (Ciudades Abiertas)"
@@ -79,7 +67,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid15",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Public Bicycles (Ciudades Abiertas)"
@@ -91,28 +79,40 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid16",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Infrastructure (edintinf)"
-  }, {
     "@language" : "es",
-    "@value" : "Infraestructura (edintinf)"
+    "@value" : "QUDT"
+  }, {
+    "@language" : "en",
+    "@value" : "QUDT"
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "https://edint.es/def/infraestructura"
+    "@id" : "http://qudt.org/schema/qudt"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "OGC Simple Features"
+  }, {
+    "@language" : "en",
+    "@value" : "OGC Simple Features"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/sf"
   } ]
 }, {
   "@id" : "_:genid18",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "SAREF"
+    "@value" : "GeoSPARQL"
   }, {
     "@language" : "en",
-    "@value" : "SAREF"
+    "@value" : "GeoSPARQL"
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "https://saref.etsi.org/core"
+    "@id" : "http://www.opengis.net/ont/geosparql"
   } ]
 }, {
   "@id" : "_:genid19",
@@ -199,28 +199,16 @@
   "@id" : "_:genid7",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "geo_core (IGN)"
+    "@value" : "SAREF"
   }, {
     "@language" : "en",
-    "@value" : "geo_core (IGN)"
+    "@value" : "SAREF"
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "https://datos.ign.es/def/geo_core"
+    "@id" : "https://saref.etsi.org/core"
   } ]
 }, {
   "@id" : "_:genid8",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "SOSA/SSN"
-  }, {
-    "@language" : "en",
-    "@value" : "SOSA/SSN"
-  } ],
-  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://www.w3.org/ns/sosa"
-  } ]
-}, {
-  "@id" : "_:genid9",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "OWL-Time"
@@ -230,6 +218,18 @@
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
     "@id" : "http://www.w3.org/2006/time"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infrastructure (edintinf)"
+  }, {
+    "@language" : "es",
+    "@value" : "Infraestructura (edintinf)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "https://edint.es/def/infraestructura"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/source",
@@ -1407,7 +1407,7 @@
     "@value" : "2026-09-17"
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+    "@id" : "https://creativecommons.org/licenses/by-sa/4.0/"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",

@@ -191,7 +191,7 @@ mappings:
     sources: photovoltaic-source
     s: "https://example.org/recurso/tarifaInstalacionFotovoltaica/$(rate_id)"
     po:
-      - [a, edintfotov:PhtovoltaicSystemRate]
+      - [a, edintfotov:PhotovoltaicSystemRate]
       - [dct:identifier, $(rate_id)]
       - [rdfs:label, "Tarifa aplicada para la generación de electricidad"]
       - [rdfs:label, "Tarifa de tipo: $(rate_id)"]
@@ -219,5 +219,5 @@ mappings:
     po:
       - [a, qudt:QuantityValue]
       - [qudt:hasUnit, "https://example.org/recurso/unidad/$(unit_id)~iri"]
-      - [qudt:value, "$(generation_value)~xsd:float"]
+      - [qudt:numericValue, "$(generation_value)~xsd:float"]
       - [rdfs:label, "Cantidad generada: $(generation_value) $(unit_label)"]

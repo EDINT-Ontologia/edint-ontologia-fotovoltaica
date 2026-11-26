@@ -6,7 +6,7 @@ Figura 1. Modelo conceptual de la ontología</figcaption></center></p>
  <a href="#http://www.w3.org/ns/sosa/madeBySensor">hechas con sensores</a>, que a su vez <a href="#http://www.w3.org/ns/sosa/observes">observan</a> una <a href="#http://www.w3.org/ns/sosa/ObservableProperty">propiedad observable</a> tal como la electricidad generada, consumida, acumulada y vertida en la red.</p>
 
 <p>Un <a href="#PhotovoltaicMeter">medidor fotovoltaico</a> es un sensor que mide las variables relacionadas con la electricidad que es generada por la instalación. Estas <a href="#PhotovoltaicGeneration">mediciones de la generación</a> reflejan la cantidad de electricidad generada, consumida, acumulada o vertida en cierto período de tiempo. Para representar estas mediciones se reutiliza la ontología de cantidades, unidades, dimensiones y tipos, <a href="https://www.qudt.org/">Quantities, Units, Dimensions and DataTypes Ontology</a>. El valor de la medición se representa mediante la clase  <a href="#http://qudt.org/schema/qudt/QuantityValue">QuantityValue</a> que expresa la magnitud y el tipo de una cantidad y se obtiene multiplicando un <a href="#http://qudt.org/schema/qudt/value">valor numérico n</a> por una unidad de medida que se obtiene a través de la propiedad <a href="#http://qudt.org/schema/qudt/hasUnit">hasUnit</a> que se relaciona con la clase <a href="#http://qudt.org/schema/qudt/Unit">Unit</a> que contiene un catálogo de unidades de medida, por ejempo kilovatio-hora (unit:KiloW-HR) utilizado para medir la generación de electricidad.  El período medido se representa mediante la clase  <a href="#http://www.w3.org/2006/time#Interval">Interval</a> en donde su hora de inicio y hora de fin se relacionan con un instante de tiempo (<a href="#http://www.w3.org/2006/time#Instant">Instant</a>). El <a href="#https://edint.es/kos/PhotovoltaicSystemStatus">estado de la instalación fotovoltaica</a> es una taxonomía en donde se tienen conceptos como "Operativo", "Parcial" o  "Fuera de servicio".  La instalación tiene un <a href="#https://edint.es/kos/PhotovoltaicSystemUsageType">tipo de uso</a> que puede ser por ejemplo  "Conectado (On-grid)", "Autónomo (Off-grid)" o "Híbrido". 
-El <a href="#PhotovoltaicSystemContract">contrato</a> tiene un <a href="#contractHolder">titular</a> y se <a href="#appliesTo">aplica</a> una determianda instalación fotovoltaica. El contrato también se asocia con una <a href="#PhotovoltaicRate">tarifa</a>.</p>
+El <a href="#PhotovoltaicSystemContract">contrato</a> tiene un <a href="#contractHolder">titular</a> y se <a href="#appliesTo">aplica</a> una determianda instalación fotovoltaica. El contrato también se asocia con una <a href="#PhotovoltaicSystemRate">tarifa</a>.</p>
 <pre><textarea style="resize:none" readonly id="code2" name="code" rows="25" cols="100">
 @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
 @prefix edintinf: &lt;https://edint.es/def/infraestructura#&gt; .
@@ -124,7 +124,7 @@ El <a href="#PhotovoltaicSystemContract">contrato</a> tiene un <a href="#contrac
 
 # Tarifa de generación de electricidad para el contrato
 &lt;https://example.org/recurso/tarifaInstalacionFotovoltaica/tarifa_fotov_general&gt;
-  a edintfotov:PhtovoltaicSystemRate;
+  a edintfotov:PhotovoltaicSystemRate;
   dct:identifier "tarifa_fotov_general";
   rdfs:label "Tarifa aplicada para la generación de electricidad",
     "Tarifa de tipo: tarifa_fotov_general" .
